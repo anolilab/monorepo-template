@@ -21,7 +21,7 @@
         "postinstall": "husky install && preconstruct dev",
         "prettier": "prettier --config=.prettierrc.cjs --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
         "lint:staged": "lint-staged",
-        "lint:text": "textlint ./.build/ISSUE_TEMPLATE/** ./src/** ./docs/** ./README.md ./UPGRADE.md --dry-run",
+        "lint:text": "textlint ./.github/ISSUE_TEMPLATE/** ./packages/** ./docs/** ./README.md ./UPGRADE.md --dry-run",
         "sort-package-json": "sort-package-json packages/**/package.json",
         "fix:build": "preconstruct fix",
         "lint": "cross-env NO_LOGS=true eslint -c ./.eslintrc.cjs --ext .js,.ts,.tsx ./packages",
