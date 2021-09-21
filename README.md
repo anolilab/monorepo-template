@@ -30,15 +30,15 @@ Use the following steps when first using this template.
 - Find and replace `anolilab/node-mono-library-template` with `user/repo` across the whole project.
 - Replace `<< TEMPLATE NAME >>` in the `LICENSE` file with the name of your choosing.
 - Replace the template package in the packages folder with a package of your choosing.
-- For automatic publishing add your npm token to your [github repo secrets](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) with the name `SEMANTIC_RELEASE_GITHUB_NPM_PACKAGE_TOKEN`.
-- For automatic publishing add your github token to your [github repo secrets](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) with the name `SEMANTIC_RELEASE_GITHUB_TOKEN`.
+- For automatic publishing add your npm token to your [github repo secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) with the name `SEMANTIC_RELEASE_GITHUB_NPM_PACKAGE_TOKEN`.
+- For automatic publishing add your github token to your [github repo secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) with the name `SEMANTIC_RELEASE_GITHUB_TOKEN`.
 
 <br />
 
 ## Why
 
-I've created this template primarily for my work, to prevent from constantly reinventing the wheel when starting a new project.
-I've often had ideas and then delayed because the pain of starting from scratch is too high. This toolkit hopefully helps to reduce the friction.
+ Created this template primarily for my work, to prevent from constantly reinventing the wheel when starting a new project.
+ Often had ideas and then delayed because the pain of starting from scratch is too high. This toolkit hopefully helps to reduce the friction.
 
 This template repo comes with the following tools:
 
@@ -50,17 +50,20 @@ This template repo comes with the following tools:
 - [`babel`](https://babeljs.io/) - used by preconstruct for the compilation of code and macros.
 - [`semantic-release`](https://github.com/semantic-release/semantic-release/) - for automating releases to GitHub and NPM.
 - [`GitHub Actions`](https://github.com/features/actions) - as the primary continuous integration (deployment) tool.
+
+<!-- textlint-disable alex -->
+
 - [`husky`](https://github.com/typicode/husky) - for git hooks.
 - [`lint-staged`](https://github.com/okonet/lint-staged) - for automated precommit checks.
 
 ## Versioning
 
-This project uses [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/anolilab/node-mono-library-template/tags).
+This project uses [SemVer](https://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/anolilab/node-mono-library-template/tags).
 
 ## Supported Node.js Versions
 
 Libraries in this ecosystem make a best effort to track
-[Node.js' release schedule](https://nodejs.org/en/about/releases/). Here's [a
+[Node.js’ release schedule](https://nodejs.org/en/about/releases/). Here’s [a
 post on why we think this is important](https://medium.com/the-node-js-collection/maintainers-should-consider-following-node-js-release-schedule-ab08ed4de71a).
 
 Contributing

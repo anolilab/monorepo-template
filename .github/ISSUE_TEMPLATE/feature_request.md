@@ -5,14 +5,19 @@ title: ""
 labels: ""
 assignees: ""
 ---
+<!-- textlint-disable @textlint-rule/google/exclamation-points -->
 
 ### What do you want and why?
+
+<!-- textlint-disable @textlint-rule/google/exclamation-points -->
 
 The more information the better!
 
 ### Possible implementation(s)
 
-How might we do this?
+<!-- textlint-disable @textlint-rule/google/exclamation-points -->
+
+How  we do this?
 
 ### Additional context
 
