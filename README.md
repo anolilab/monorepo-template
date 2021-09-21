@@ -20,7 +20,8 @@ Use the following steps when first using this template.
 - Find and replace `anolilab/node-mono-library-template` with `user/repo` across the whole project.
 - Replace `<< TEMPLATE NAME >>` in the `LICENSE` file with the name of your choosing.
 - Replace the template package in the packages folder with a package of your choosing.
-- **_OPTIONAL_**: For automatic publishing add your npm token to to your [github repo secrets](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) with the name `NPM_TOKEN`.
+- For automatic publishing add your npm token to your [github repo secrets](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) with the name `SEMANTIC_RELEASE_GITHUB_NPM_PACKAGE_TOKEN`.
+- For automatic publishing add your github token to your [github repo secrets](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) with the name `SEMANTIC_RELEASE_GITHUB_TOKEN`.
 
 <br />
 
