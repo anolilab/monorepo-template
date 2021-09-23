@@ -4,7 +4,7 @@ const path = require("path");
  * @param {string[]} paths - the paths
  */
 const baseDirection = (...paths) => path.resolve(__dirname, "..", path.join(...paths));
-console.log(baseDirection(""))
+
 /**
  * @param {string[]} args - the paths
  */
