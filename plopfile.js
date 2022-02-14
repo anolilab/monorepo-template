@@ -82,41 +82,41 @@ module.exports = function (
         actions: () => [
             {
                 type: "add",
-                path: "packages/{{name}}/.npmignore",
+                path: "packages/{{directory}}/.npmignore",
                 templateFile: "plop-templates/package/.npmignore.hbs",
             },
             {
                 type: "add",
-                path: "packages/{{name}}/.releaserc.json",
+                path: "packages/{{directory}}/.releaserc.json",
                 templateFile: "plop-templates/package/.releaserc.json.hbs",
             },
             {
                 type: "add",
-                path: "packages/{{name}}/.gitkeep",
+                path: "packages/{{directory}}/.gitkeep",
             },
             {
                 type: "add",
-                path: "packages/{{name}}/babel.config.cjs",
+                path: "packages/{{directory}}/babel.config.cjs",
                 templateFile: "plop-templates/package/babel.config.cjs.hbs",
             },
             {
                 type: "add",
-                path: "packages/{{name}}/LICENSE.md",
+                path: "packages/{{directory}}/LICENSE.md",
                 templateFile: "plop-templates/package/LICENSE.md.hbs",
             },
             {
                 type: "add",
-                path: "packages/{{name}}/package.json",
+                path: "packages/{{directory}}/package.json",
                 templateFile: "plop-templates/package/package.json.hbs",
             },
             {
                 type: "add",
-                path: "packages/{{name}}/README.md",
+                path: "packages/{{directory}}/README.md",
                 templateFile: "plop-templates/package/README.md.hbs",
             },
             {
                 type: "add",
-                path: "packages/{{name}}/tsconfig.json",
+                path: "packages/{{directory}}/tsconfig.json",
                 templateFile: "plop-templates/package/tsconfig.json.hbs",
             },
         ],
