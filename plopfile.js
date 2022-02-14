@@ -83,12 +83,12 @@ module.exports = function (
             {
                 type: "add",
                 path: "packages/{{name}}/.npmignore",
-                templateFile: "plop-templates/packages/.npmignore.hbs",
+                templateFile: "plop-templates/package/.npmignore.hbs",
             },
             {
                 type: "add",
                 path: "packages/{{name}}/.releaserc.json",
-                templateFile: "plop-templates/packages/.releaserc.json.hbs",
+                templateFile: "plop-templates/package/.releaserc.json.hbs",
             },
             {
                 type: "add",
@@ -97,27 +97,27 @@ module.exports = function (
             {
                 type: "add",
                 path: "packages/{{name}}/babel.config.cjs",
-                templateFile: "plop-templates/packages/config/babel.config.cjs.hbs",
+                templateFile: "plop-templates/package/babel.config.cjs.hbs",
             },
             {
                 type: "add",
                 path: "packages/{{name}}/LICENSE.md",
-                templateFile: "plop-templates/packages/config/LICENSE.md.hbs",
+                templateFile: "plop-templates/package/LICENSE.md.hbs",
             },
             {
                 type: "add",
                 path: "packages/{{name}}/package.json",
-                templateFile: "plop-templates/packages/config/package.json.hbs",
+                templateFile: "plop-templates/package/package.json.hbs",
             },
             {
                 type: "add",
                 path: "packages/{{name}}/README.md",
-                templateFile: "plop-templates/packages/config/README.md.hbs",
+                templateFile: "plop-templates/package/README.md.hbs",
             },
             {
                 type: "add",
                 path: "packages/{{name}}/tsconfig.json",
-                templateFile: "plop-templates/packages/config/tsconfig.json.hbs",
+                templateFile: "plop-templates/package/tsconfig.json.hbs",
             },
         ],
     });
