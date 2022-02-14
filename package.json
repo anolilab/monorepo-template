@@ -22,7 +22,7 @@
         "fix:lint:text": "textlint ./.github/ISSUE_TEMPLATE/** ./packages/** ./README.md ./UPGRADE.md --parallel --experimental --fix",
         "preinstall": "node verify-node-version.cjs",
         "postinstall": "preconstruct dev",
-        "lint": "cross-env NO_LOGS=true eslint -c ./.eslintrc.cjs --ext .js,.ts,.tsx ./packages",
+        "lint": "cross-env NO_LOGS=true eslint -c ./.eslintrc.cjs --ext .js,.ts,.tsx ./packages --cache --cache-strategy content .",
         "lint:fix": "yarn run lint --fix",
         "lint:text": "textlint ./.github/ISSUE_TEMPLATE/** ./packages/** ./README.md ./UPGRADE.md --parallel --experimental --dry-run",
         "prepare": "is-ci || husky install",
