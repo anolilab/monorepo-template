@@ -20,7 +20,7 @@ jobs:
         strategy:
             matrix:
                 os: ["ubuntu-latest"]
-                node_version: ["14", "16", "17"]
+                node_version: ["16.x", "17.x"]
                 include:
                     - os: "macos-latest"
                       node_version: "16"
@@ -59,7 +59,7 @@ jobs:
 
             - name: "Get yarn cache directory path"
               id: "yarn-cache-dir-path"
-              run: "echo \"::set-output name=dir::$(yarn config get cacheFolder)\""
+              run: 'echo "::set-output name=dir::$(yarn config get cacheFolder)"'
 
             - uses: "actions/cache@v2"
               id: "yarn-cache" # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
