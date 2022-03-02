@@ -185,7 +185,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.10.2
     "@typescript-eslint/parser": ^5.10.2
     babel-loader: ^8.2.3
-    browserslist-config-anolilab: ^2.3.0
+    browserslist-config-anolilab: ^3.0.0
     commitizen: ^4.2.4
     cross-env: ^7.0.3
     diffable-html: ^5.0.0
@@ -6060,10 +6060,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist-config-anolilab@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "browserslist-config-anolilab@npm:2.3.0"
-  checksum: bd02d894eb683959dfe28631d75b30531b6862a9bc00fe3d0be166f51940abbdd23f5593884db14a60f9d0af1999f8ae92150551e3425cfa63b0bb6ba3f14fdf
+"browserslist-config-anolilab@npm:^3.0.0":
+  version: 3.0.1
+  resolution: "browserslist-config-anolilab@npm:3.0.1"
+  checksum: c1d456b7ff3d1e6d0a5e27c89671dd439368a3258064a5a9f746090b792810b4c8b8ebfb27ccb628ab1a3267c2e59c5341daf6e5441c1373806a0aef4830b0ec
   languageName: node
   linkType: hard
 
