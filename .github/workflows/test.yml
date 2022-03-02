@@ -60,7 +60,7 @@ jobs:
                   git config --global user.name "${NAME}"
 
             - name: "Set node version to ${{ matrix.node_version }}"
-              uses: "actions/setup-node@v2"
+              uses: actions/setup-node@v3
               with:
                   node-version: "${{ matrix.node_version }}"
                   # Enable this to use the github packages
