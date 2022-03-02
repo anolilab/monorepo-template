@@ -61,6 +61,7 @@
         "@manypkg/cli": "^0.19.1",
         "@preconstruct/cli": "^2.1.5",
         "@qiwi/multi-semantic-release": "^3.17.1",
+        "@testing-library/jest-dom": "^5.16.2",
         "@types/jest": "^27.4.0",
         "@types/jest-axe": "^3.5.3",
         "@types/node": "^14.18.10",
@@ -72,6 +73,7 @@
         "cross-env": "^7.0.3",
         "diffable-html": "^5.0.0",
         "eslint": "^7.32.0",
+        "eslint-plugin-import": "^2.25.4",
         "eslint-plugin-jest": "^26.0.0",
         "eslint-plugin-node": "^11.1.0",
         "husky": "^7.0.4",
@@ -98,7 +100,7 @@
     "modulePathIgnorePatterns": [
         "./package.json"
     ],
-    "packageManager": "yarn@3.1.1",
+    "packageManager": "yarn@3.2.0",
     "preconstruct": {
         "packages": [
             "packages/*",

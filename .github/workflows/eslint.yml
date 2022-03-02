@@ -1,17 +1,20 @@
 # https://help.github.com/en/categories/automating-your-workflow-with-github-actions
 
-name: "Test Packages"
+name: "ESLint"
 
 on: # yamllint disable-line rule:truthy
+    push:
+        paths:
+            - "**.js"
+            - "**.jsx"
+            - "**.ts"
+            - "**.tsx"
     pull_request:
-        branches:
-            - "([0-9])?(.{+([0-9]),x}).x"
-            - "main"
-            - "next"
-            - "next-major"
-            - "alpha"
-            - "beta"
-    workflow_dispatch: # yamllint disable-line rule:empty-values
+        paths:
+            - "**.js"
+            - "**.jsx"
+            - "**.ts"
+            - "**.tsx"
 
 # Enable this to use the github packages
 # yamllint disable-line rule:comments
@@ -21,21 +24,10 @@ on: # yamllint disable-line rule:truthy
 #    scope: "${{ github.repository_owner }}"
 
 jobs:
-    test:
-        name: "tests"
+    eslint:
+        name: "ESLint"
 
-        strategy:
-            matrix:
-                os: ["ubuntu-latest"]
-                node_version: ["16.x", "17.x"]
-                include:
-                    - os: "macos-latest"
-                      node_version: "16"
-                    - os: "windows-latest"
-                      node_version: "16"
-            fail-fast: false
-
-        runs-on: "${{ matrix.os }}"
+        runs-on: "ubuntu-latest"
 
         steps:
             - name: "Git checkout"
@@ -59,10 +51,10 @@ jobs:
                   git config --global user.email "${EMAIL}"
                   git config --global user.name "${NAME}"
 
-            - name: "Set node version to ${{ matrix.node_version }}"
+            - name: "Use Node.js 16.x"
               uses: "actions/setup-node@v2"
               with:
-                  node-version: "${{ matrix.node_version }}"
+                  node-version: "16.x"
                   # Enable this to use the github packages
                   # registry-url: "${{ env.registry_url }}"
                   # Defaults to the user or organization that owns the workflow file
@@ -80,26 +72,7 @@ jobs:
                   restore-keys: |
                       ${{ runner.os }}-yarn-
 
-            - name: "update yarn to v3"
-              run: "yarn set version 3.0.1"
-
             - name: "install"
               run: "yarn install --immutable"
 
-            - name: "test and coverage"
-              run: "yarn run test --ci --reporters=default --reporters=jest-junit"
-
-            - name: "Upload test results"
-              if: "success() || failure()"
-              uses: "actions/upload-artifact@v2"
-              with:
-                  name: "test-results"
-                  path: "./coverage/junit.xml"
-
-            - name: "Create test report"
-              uses: "dorny/test-reporter@v1"
-              if: "success() || failure()"
-              with:
-                  name: "JEST Tests"
-                  path: "./coverage/junit.xml"
-                  reporter: "jest-junit"
+            - run: "yarn run lint"

@@ -65,6 +65,9 @@ jobs:
             - name: "Build packages"
               run: "yarn build"
 
+            - name: "ESLint"
+              run: "yarn run lint"
+
             - name: "Test packages"
               run: "yarn test"
 
