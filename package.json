@@ -100,7 +100,7 @@
     "modulePathIgnorePatterns": [
         "./package.json"
     ],
-    "packageManager": "yarn@3.2.0",
+    "packageManager": "yarn@3.5.0",
     "preconstruct": {
         "packages": [
             "packages/*",
