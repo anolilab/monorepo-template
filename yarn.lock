@@ -200,7 +200,7 @@ __metadata:
     jest-circus: ^27.4.6
     jest-diff: ^27.4.6
     jest-extended: ^2.0.0
-    jest-junit: ^13.0.0
+    jest-junit: ^16.0.0
     jest-mock: ^27.4.6
     jest-watch-typeahead: ^1.0.0
     lint-staged: ^12.3.2
@@ -11782,15 +11782,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-junit@npm:^13.0.0":
-  version: 13.0.0
-  resolution: "jest-junit@npm:13.0.0"
+"jest-junit@npm:^16.0.0":
+  version: 16.0.0
+  resolution: "jest-junit@npm:16.0.0"
   dependencies:
     mkdirp: ^1.0.4
     strip-ansi: ^6.0.1
     uuid: ^8.3.2
     xml: ^1.0.1
-  checksum: d3a1bf6e98250837d1a9939cd54f29a7bd4fb835af30e92d0d544300fbe634eb86d2b018c79a7a35b123d933bf3e6c96ba13c0161cdefbf66fc3ab771707572e
+  checksum: 412aa4bfeec4254a9b34f417fda79107c7cbd295e56ffeb299ac9c977545910fbabe57c91c6cd1f12b700d4a1f60f79872b0075003f02da87d463e30fc2d9d78
   languageName: node
   linkType: hard
 
