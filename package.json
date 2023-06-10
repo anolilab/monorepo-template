@@ -68,7 +68,7 @@
         "@typescript-eslint/eslint-plugin": "^5.10.2",
         "@typescript-eslint/parser": "^5.10.2",
         "babel-loader": "^8.2.3",
-        "browserslist-config-anolilab": "^2.3.0",
+        "browserslist-config-anolilab": "^4.0.0",
         "commitizen": "^4.2.4",
         "cross-env": "^7.0.3",
         "diffable-html": "^5.0.0",
