@@ -5,8 +5,7 @@
     "license": "MIT",
     "type": "module",
     "workspaces": [
-        "packages/*",
-        "apps/*"
+        "packages/*"
     ],
     "scripts": {
         "audit": "audit-ci --config ./audit-ci.jsonc",
@@ -36,7 +35,6 @@
         "lint:text": "textlint ./.github/ ./packages/** ./README.md ./UPGRADE.md --parallel --experimental --cache --dry-run",
         "lint:text:fix": "textlint ./.github/ ./packages/** ./README.md ./UPGRADE.md --parallel --experimental --fix",
         "lint:types": "nx run-many --target=lint:types --all --parallel",
-        "lint:types:root": "tsc --noEmit",
         "nx": "nx",
         "plop": "plop",
         "prepare": "is-ci || husky install || exit 0",

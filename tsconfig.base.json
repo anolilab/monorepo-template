@@ -4,12 +4,15 @@
         "baseUrl": "./",
         "downlevelIteration": true,
         "isolatedModules": true,
-        "lib": ["DOM", "DOM.Iterable", "ES2023"],
-        "module": "ESNext",
+        "lib": ["ES2023"],
+        "module": "preserve",
         "target": "ESNext",
+        "moduleResolution": "Bundler",
         "tsBuildInfoFile": ".tsbuildinfo",
         "moduleDetection": "force",
         "verbatimModuleSyntax": true,
+
+        "noEmit": true,
 
         "strict": true,
         "alwaysStrict": true,

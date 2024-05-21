@@ -248,7 +248,7 @@ jobs:
                   GIT_AUTHOR_NAME: "GitHub Actions Shell"
                   EMAIL: "github-actions[bot]@users.noreply.github.com"
 
-            # From https://github.com/rhysd/actionlint/blob/main/docs/usage.md#use-actionlint-on-github-actions
+            # From https://github.com/rhysd/actionlint/main/docs/usage.md#use-actionlint-on-github-actions
             - name: "Lint github workflows"
               run: |
                   bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
