@@ -1,105 +1,160 @@
 # https://help.github.com/en/categories/automating-your-workflow-with-github-actions
 
-name: "Test Packages"
+name: "Tests"
 
 on: # yamllint disable-line rule:truthy
-    pull_request:
-        branches:
-            - "([0-9])?(.{+([0-9]),x}).x"
-            - "main"
-            - "next"
-            - "next-major"
-            - "alpha"
-            - "beta"
-    workflow_dispatch: # yamllint disable-line rule:empty-values
+    # eslint-disable-next-line yml/no-empty-mapping-value
+    pull_request: # yamllint disable-line rule:empty-values
+        types: ["opened", "synchronize", "reopened"]
+    merge_group: # yamllint disable-line rule:empty-values
 
-# Enable this to use the github packages
-# yamllint disable-line rule:comments
-#env:
-#    package: "@${{ github.repository }}"
-#    registry_url: "https://npm.pkg.github.com"
-#    scope: "${{ github.repository_owner }}"
+concurrency:
+    group: "${{ github.workflow }}-${{ github.ref }}"
+    cancel-in-progress: true
+
+permissions:
+    contents: "read" # to fetch code (actions/checkout)
+
+env:
+    NX_BRANCH: "${{ github.event.number }}"
+    NX_RUN_GROUP: "${{ github.run_id }}"
+    HEAD_REF: "${{ github.event_name == 'pull_request' && github.event.pull_request.head.ref || github.ref_name }}"
+    HEAD_REPOSITORY: "${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name || github.repository }}"
 
 jobs:
-    test:
-        name: "tests"
-
-        strategy:
-            matrix:
-                os: ["ubuntu-latest"]
-                node_version: ["16.x", "17.x"]
-                include:
-                    - os: "macos-latest"
-                      node_version: "16"
-                    - os: "windows-latest"
-                      node_version: "16"
-            fail-fast: false
-
-        runs-on: "${{ matrix.os }}"
-
+    files-changed:
+        name: "Detect what files changed"
+        runs-on: "ubuntu-22.04"
+        timeout-minutes: 3
+        # Map a step output to a job output
+        outputs:
+            packages: "${{ steps.changes.outputs.packages }}"
+            codecov: "${{ steps.changes.outputs.codecov }}"
         steps:
-            - name: "Git checkout"
-              uses: "actions/checkout@v2"
+            - name: "Harden Runner"
+              uses: "step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142" # v2.7.0
               with:
-                  fetch-depth: 0
-                  persist-credentials: false
+                  egress-policy: "audit"
+
+            - name: "Git checkout"
+              uses: "actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11" # v4.1.1
               env:
                   GIT_COMMITTER_NAME: "GitHub Actions Shell"
                   GIT_AUTHOR_NAME: "GitHub Actions Shell"
                   EMAIL: "github-actions[bot]@users.noreply.github.com"
 
-            - name: "Configure Container"
+            - name: "Check for file changes"
+              uses: "dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36" # v3.0.2
+              id: "changes"
+              with:
+                  token: "${{ github.token }}"
+                  filters: ".github/file-filters.yml"
+
+    test:
+        name: "Test (node-${{ matrix.node_version }}, ${{ matrix.os }})"
+        if: "needs.files-changed.outputs.packages == 'true'"
+        needs: "files-changed"
+        strategy:
+            max-parallel: 4
+            matrix:
+                os:
+                    - "ubuntu-latest"
+                node_version: ["18", "20", "21"]
+                # On the other platforms, we only test the lts node version
+                include:
+                    - os: "macos-latest"
+                      node_version: "20"
+                    - os: "windows-latest"
+                      node_version: "20.3.1" # https://github.com/nodejs/node/issues/48673
+            fail-fast: false
+        runs-on: "${{ matrix.os }}"
+        env:
+            NODE: "${{ matrix.node_version }}"
+        steps:
+            - name: "Harden Runner"
+              uses: "step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142" # v2.7.0
+              with:
+                  egress-policy: "audit"
+
+            - name: "Git checkout ${{ env.HEAD_REPOSITORY }}:${{ env.HEAD_REF }}"
+              uses: "actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11" # v4.1.1
               env:
-                  GIT_USER_EMAIL: "${{ secrets.GIT_USER_EMAIL }}"
-                  GIT_USER_USERNAME: "${{ secrets.GIT_USER_USERNAME }}"
-              run: |
-                  EMAIL=${GIT_USER_EMAIL:-"github-actions[bot]@users.noreply.github.com"}
-                  NAME=${GIT_USER_USERNAME:-"github-actions-shell"}
+                  GIT_COMMITTER_NAME: "GitHub Actions Shell"
+                  GIT_AUTHOR_NAME: "GitHub Actions Shell"
+                  EMAIL: "github-actions[bot]@users.noreply.github.com"
+              with:
+                  # Number of commits to fetch. 0 indicates all history for all branches and tags.
+                  # Pulls all commits (needed for NX)
+                  fetch-depth: 0
 
-                  git config --global user.email "${EMAIL}"
-                  git config --global user.name "${NAME}"
+            - name: "Derive appropriate SHAs for base and head for `nx affected` commands"
+              id: "setSHAs"
+              uses: "nrwl/nx-set-shas@76907e7e5d3cd17ddb5e2b123389f054bffcdd03" # v4
 
-            - name: "Set node version to ${{ matrix.node_version }}"
-              uses: "actions/setup-node@v2"
+            - name: "Setup resources and environment"
+              id: "setup"
+              uses: "anolilab/workflows/step/setup/action.yml@main"
               with:
                   node-version: "${{ matrix.node_version }}"
-                  # Enable this to use the github packages
-                  # registry-url: "${{ env.registry_url }}"
-                  # Defaults to the user or organization that owns the workflow file
-                  # scope: "@${{ env.scope }}"
 
-            - name: "Get yarn cache directory path"
-              id: "yarn-cache-dir-path"
-              run: "echo \"::set-output name=dir::$(yarn config get cacheFolder)\""
-
-            - uses: "actions/cache@v2"
-              id: "yarn-cache" # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+            # Temporary solution until Nx solve this https://github.com/nrwl/nx/issues/22259
+            - name: "Get changed files"
+              id: "files"
+              uses: "tj-actions/changed-files@20576b4b9ed46d41e2d45a2256e5e2316dde6834" # v43.0.1
               with:
-                  path: "${{ steps.yarn-cache-dir-path.outputs.dir }}"
-                  key: "${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}"
-                  restore-keys: |
-                      ${{ runner.os }}-yarn-
+                  files_ignore: "pnpm-lock.yaml"
+                  base_sha: "${{ steps.setSHAs.outputs.base }}"
+                  separator: ","
 
-            - name: "update yarn to v3"
-              run: "yarn set version 3.0.1"
+            - name: "Build"
+              shell: "bash"
+              run: |
+                  files="${{ steps.files.outputs.all_changed_files }}";
+                  pnpm run build:affected:packages --files=${files//\\/\/}
 
-            - name: "install"
-              run: "yarn install --immutable"
+            - name: "Run tests"
+              shell: "bash"
+              run: |
+                  files="${{ steps.files.outputs.all_changed_files }}";
 
-            - name: "test and coverage"
-              run: "yarn run test --ci --reporters=default --reporters=jest-junit"
+                  if [[ ${{ matrix.os }} == "ubuntu-latest" && ${{ matrix.node_version }} == 18 ]]; then
+                      pnpm run test:affected:coverage --files=${files//\\/\/}
+                  else
+                      pnpm run test:affected --files=${files//\\/\/}
+                  fi
 
-            - name: "Upload test results"
-              if: "success() || failure()"
-              uses: "actions/upload-artifact@v2"
+            - name: "Prepare nx cache"
+              shell: "bash"
+              run: "tar -cf - .nx/cache | lz4 > /tmp/nx_cache.tar.lz4" # compress nx cache
+
+            - name: "Upload code coverage to codecov"
+              if: "matrix.os == 'ubuntu-latest' && matrix.node_version == 18"
+              uses: "anolilab/workflows/step/codecov/action.yml@main"
               with:
-                  name: "test-results"
-                  path: "./coverage/junit.xml"
+                  run-lint: "needs.files-changed.outputs.codecov == 'true'"
+                  codecov-token: "${{ secrets.CODECOV_TOKEN }}"
+                  use-affected: "true"
+                  affected-files: "${{ steps.files.outputs.all_changed_files }}"
+#                  exclude-affected-projects: ""
 
-            - name: "Create test report"
-              uses: "dorny/test-reporter@v1"
-              if: "success() || failure()"
+    # This check runs once all dependant jobs have passed
+    # It symbolizes that all required Frontend checks have succesfully passed (Or skipped)
+    # This check is the only required GitHub check
+    test-required-check:
+        needs: ["files-changed", "test"]
+        name: "Check Test Run"
+        # This is necessary since a failed/skipped dependent job would cause this job to be skipped
+        if: "always() && (needs.test.result == 'success' || needs.test.result == 'skipped')"
+        runs-on: "ubuntu-22.04"
+        steps:
+            # If any jobs we depend on fail, we will fail since this is a required check
+            # NOTE: A timeout is considered a failure
+            - name: "Harden Runner"
+              uses: "step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142" # v2.7.0
               with:
-                  name: "JEST Tests"
-                  path: "./coverage/junit.xml"
-                  reporter: "jest-junit"
+                  egress-policy: "audit"
+
+            - name: "Check for failures"
+              if: "contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled')"
+              run: |
+                  echo "One of the dependent jobs have failed. You may need to re-run it." && exit 1

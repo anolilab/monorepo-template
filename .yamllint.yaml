@@ -11,6 +11,8 @@ ignore: |
     .pnpm-workspaces.yaml
     *lock.yaml
     *workspace.yaml
+    chromatic.yml
+    __fixtures__/
 
 rules:
     braces:

@@ -4,13 +4,6 @@
 
 <br />
 
-<p align="center">
-  <a href="#getting-started"><strong>Getting Started</strong></a> ·
-  <a href="#why"><strong>Why?</strong></a> ·
-  <a href="docs"><strong>Documentation</strong></a> ·
-  <a href="docs/contributing.md"><strong>Contributing</strong></a>
-</p>
-
 ---
 
 <div align="center">
@@ -27,12 +20,15 @@
 
 Use the following steps when first using this template.
 
--   Find and replace `anolilab/node-mono-library-template` with `user/repo` across the whole project.
--   Replace `<< TEMPLATE NAME >>` in the `LICENSE` file with the name of your choosing.
--   If you using https://github.com/probot/settings please adjust `.github/settings.yml` otherwise everything that you do manually will be overwritten!
+-   Find and replace
+    - `{{ ORGANIZATIONS }}` with your `organization` name
+    - {{ REPOSITORY_NAME }} with your `repository name`
+    - {{ SCOPED_PACKAGE_NAME }} with your npm `scope name` (don't use the @ at the beginning)
+    - {{ ORGANIZATIONS_capitalize }} with your capitalized `organization` name
+    across the whole project.
 -   Replace the template package in the package's folder with a package of your choosing.
--   For automatic publishing add your npm token to your [github repo secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) with the name `NPM_AUTH_TOKEN`.
--   For automatic publishing add your GitHub token to your [github repo secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) with the name `SEMANTIC_RELEASE_GITHUB_TOKEN`.
+-   For automatic publishing add your npm token to your [GitHub repo secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) with the name `NPM_AUTH_TOKEN`.
+-   For automatic publishing add your GitHub token to your [GitHub repo secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) with the name `SEMANTIC_RELEASE_GITHUB_TOKEN`.
 
 <br />
 
@@ -40,22 +36,6 @@ Use the following steps when first using this template.
 
 Created this template primarily for my work, to prevent from constantly reinventing the wheel when starting a new project.
 Often had ideas and then delayed because the pain of starting from scratch is too high. This toolkit hopefully helps to reduce the friction.
-
-This template repo comes with the following tools:
-
--   [`yarn`](https://yarnpkg.com/) monorepo.
--   [`preconstruct`](https://preconstruct.tools/) - Automated builds and great support for JS tooling.
--   [`TypeScript`](https://www.typescriptlang.org/) - For typesafe code, great editor support and simpler refactoring.
--   [`eslint`](https://eslint.org/) - for code linting.
--   [`prettier`](https://prettier.io/) - for code formatting.
--   [`babel`](https://babeljs.io/) - used by preconstruct for the compilation of code and macros.
--   [`semantic-release`](https://github.com/semantic-release/semantic-release/) - for automating releases to GitHub and NPM.
--   [`GitHub Actions`](https://github.com/features/actions) - as the primary continuous integration (deployment) tool.
-
-<!-- textlint-disable alex -->
-
--   [`husky`](https://github.com/typicode/husky) - for git hooks.
--   [`lint-staged`](https://github.com/okonet/lint-staged) - for automated precommit checks.
 
 ## Versioning
 
@@ -80,4 +60,4 @@ If you would like to help take a look at the [list of issues](https://github.com
 
 ## License
 
-The anolilab node-mono-library-template is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
+The anolilab monorepo-template is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)

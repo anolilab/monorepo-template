@@ -1,125 +1,76 @@
-// eslint-disable-next-line unicorn/prefer-module,func-names
-module.exports = function (
-    /** @type {import('plop').NodePlopAPI} */
-    plop,
-) {
+const capitalize = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+};
+
+const camelCase = (str) => {
+    return str.replace(/[-_](\w)/g, (_, c) => c.toUpperCase());
+};
+
+// eslint-disable-next-line no-unused-vars,import/no-unused-modules,func-names
+export default function (plop) {
+    plop.setHelper("capitalize", (text) => {
+        return capitalize(camelCase(text));
+    });
+    plop.setHelper("camelCase", (text) => {
+        return camelCase(text);
+    });
+
     plop.setGenerator("package", {
-        description: "Create new package",
+        description: `Generates a package`,
         prompts: [
             {
                 type: "input",
-                name: "name",
-                message: "What is your package name? Example: @test/package-name",
+                name: `packageName`,
+                message: `Enter package name:`,
                 validate: (value) => {
-                    if (/.+/.test(value)) {
-                        return true;
+                    if (!value) {
+                        return `package name is required`;
                     }
 
-                    return "name is required";
-                },
-            },
-            {
-                type: "input",
-                name: "export_name",
-                message: "What is your package export name? Its based on your package name: test-package-name",
-                // eslint-disable-next-line radar/no-identical-functions
-                validate: (value) => {
-                    if (/.+/.test(value)) {
-                        return true;
+                    // check is case is correct
+                    if (value !== value.toLowerCase()) {
+                        return `package name must be in lowercase`;
                     }
 
-                    return "name is required";
+                    // cannot have spaces
+                    if (value.includes(" ")) {
+                        return `package name cannot have spaces`;
+                    }
+
+                    return true;
                 },
             },
             {
                 type: "input",
                 name: "description",
-                message: "What is your package description?",
-                validate: (value) => {
-                    if (/.+/.test(value)) {
-                        return true;
-                    }
-
-                    return "description is required";
-                },
-            },
-            {
-                type: "input",
-                name: "homepage",
-                message: "What is your homepage url?",
-                validate: (value) => {
-                    if (/.+/.test(value)) {
-                        return true;
-                    }
-
-                    return "homepage is required";
-                },
-            },
-            {
-                type: "input",
-                name: "repository",
-                message: "What is your repository name? Example: name/repo",
-                validate: (value) => {
-                    if (/.+/.test(value)) {
-                        return true;
-                    }
-
-                    return "repository is required";
-                },
-            },
-            {
-                type: "input",
-                name: "directory",
-                message: "What is your package directory name?",
-                validate: (value) => {
-                    if (/.+/.test(value)) {
-                        return true;
-                    }
-
-                    return "directory is required";
-                },
+                message: `The description of this package:`,
             },
         ],
-        actions: () => [
-            {
-                type: "add",
-                path: "packages/{{directory}}/.npmignore",
-                templateFile: "plop-templates/package/.npmignore.hbs",
-            },
-            {
-                type: "add",
-                path: "packages/{{directory}}/.releaserc.json",
-                templateFile: "plop-templates/package/.releaserc.json.hbs",
-            },
-            {
-                type: "add",
-                path: "packages/{{directory}}/.gitkeep",
-            },
-            {
-                type: "add",
-                path: "packages/{{directory}}/babel.config.cjs",
-                templateFile: "plop-templates/package/babel.config.cjs.hbs",
-            },
-            {
-                type: "add",
-                path: "packages/{{directory}}/LICENSE.md",
-                templateFile: "plop-templates/package/LICENSE.md.hbs",
-            },
-            {
-                type: "add",
-                path: "packages/{{directory}}/package.json",
-                templateFile: "plop-templates/package/package.json.hbs",
-            },
-            {
-                type: "add",
-                path: "packages/{{directory}}/README.md",
-                templateFile: "plop-templates/package/README.md.hbs",
-            },
-            {
-                type: "add",
-                path: "packages/{{directory}}/tsconfig.json",
-                templateFile: "plop-templates/package/tsconfig.json.hbs",
-            },
-        ],
+        actions(answers) {
+            const actions = [];
+
+            if (!answers) return actions;
+
+            const { description, outDir } = answers;
+            const generatorName = answers[`packageName`] ?? "";
+
+            const data = {
+                [`packageName`]: generatorName,
+                description,
+                outDir,
+            };
+
+            actions.push({
+                type: "addMany",
+                templateFiles: `plop/package/**`,
+                destination: `./packages//{{dashCase packageName}}`,
+                base: `plop/package`,
+                globOptions: { dot: true },
+                data,
+                abortOnFail: true,
+            });
+
+            return actions;
+        },
     });
-};
+}
