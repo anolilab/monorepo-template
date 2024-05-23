@@ -118,7 +118,7 @@ If you want to go the usual route and run the project locally, though:
 
 -   [Install Node.js](https://nodejs.org/en/download/)
 -   [Install nvm](https://github.com/nvm-sh/nvm#installing-and-updating) (optional)
-    > {{ ORGANIZATIONS_capitalize_> use nvm to manage the different node version, if you don't want to install `nvm`, check the package.json -> engines -> node value for the min support node version.
+    > {{ ORGANIZATIONS_capitalize }} use nvm to manage the different node version, if you don't want to install `nvm`, check the package.json -> engines -> node value for the min support node version.
 -   [Install pnpm](https://pnpm.io/installation)
 -   [Fork the project](https://guides.github.com/activities/forking/#fork)
 
@@ -517,7 +517,7 @@ Allowed scopes are:
 
 > The scope is not checkable via `Semantic Pull Request` action as this would limit the scopes to only existing modules,
 > but if we add a new package like `fs`, then the PR author couldn't use the new package name as scope.
-> As such, we (the {{ ORGANIZATIONS_capitalize_> team) must be mindful of valid scopes, and we reserve the right to edit titles as we see fit.
+> As such, we (the {{ ORGANIZATIONS_capitalize }} team) must be mindful of valid scopes, and we reserve the right to edit titles as we see fit.
 
 Some examples of valid pull request titles:
 
