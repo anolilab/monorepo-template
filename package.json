@@ -42,7 +42,7 @@
         "test": "nx run-many --target=test --all --parallel",
         "test:affected": "nx affected --target=test --parallel --nxBail",
         "test:affected:coverage": "nx affected --target=test:coverage --parallel --nxBail",
-        "test:coverage": "nx run-many --target=test:coverage --all --parallel",
+        "test:coverage": "nx run-many --target=test:coverage --all --parallel --nxBail",
         "update:deps": "taze"
     },
     "browserslist": [
