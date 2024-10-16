@@ -75,7 +75,7 @@
         "semantic-release": "^24.1.2",
         "sort-package-json": "^2.10.1",
         "taze": "^0.16.9",
-        "textlint": "^14.2.0",
+        "textlint": "^14.2.1",
         "typescript": "^5.6.2",
         "vitest": "^2.1.1"
     },
