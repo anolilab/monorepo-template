@@ -76,7 +76,7 @@
         "sort-package-json": "^2.10.1",
         "taze": "^0.16.9",
         "textlint": "^14.2.0",
-        "typescript": "^5.6.2",
+        "typescript": "^5.6.3",
         "vitest": "^2.1.1"
     },
     "packageManager": "pnpm@9.10.0",
