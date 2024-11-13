@@ -58,7 +58,7 @@
         "@commitlint/cli": "^19.5.0",
         "@commitlint/config-conventional": "^19.5.0",
         "@secretlint/secretlint-rule-preset-recommend": "^8.2.4",
-        "@types/node": "22.5.5",
+        "@types/node": "22.9.0",
         "audit-ci": "^7.1.0",
         "browserslist-config-anolilab": "^5.0.14",
         "commitizen": "^4.3.1",
@@ -74,12 +74,12 @@
         "secretlint": "8.2.4",
         "semantic-release": "^24.2.0",
         "sort-package-json": "^2.10.1",
-        "taze": "^0.16.9",
+        "taze": "^0.18.0",
         "textlint": "^14.2.1",
         "typescript": "^5.6.3",
         "vitest": "^2.1.4"
     },
-    "packageManager": "pnpm@9.10.0",
+    "packageManager": "pnpm@9.12.3",
     "engines": {
         "node": ">=18.* <=22.*"
     },
