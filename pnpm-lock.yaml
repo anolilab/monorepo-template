@@ -18,13 +18,13 @@ importers:
         version: 5.0.3(@commitlint/cli@19.6.0(@types/node@22.9.4)(typescript@5.6.3))(@types/node@22.9.4)(typescript@5.6.3)
       '@anolilab/lint-staged-config':
         specifier: ^2.1.7
-        version: 2.1.7(husky@9.1.7)(lint-staged@15.2.10)(prettier@3.3.3)(secretlint@8.5.0)
+        version: 2.1.7(husky@9.1.7)(lint-staged@15.2.10)(prettier@3.4.2)(secretlint@8.5.0)
       '@anolilab/multi-semantic-release':
         specifier: ^1.1.5
         version: 1.1.5(semantic-release@24.2.0(typescript@5.6.3))(typescript@5.6.3)
       '@anolilab/prettier-config':
         specifier: ^5.0.14
-        version: 5.0.14(prettier@3.3.3)
+        version: 5.0.14(prettier@3.4.2)
       '@anolilab/textlint-config':
         specifier: ^8.0.16
         version: 8.0.16(textlint@14.3.0)
@@ -71,8 +71,8 @@ importers:
         specifier: ^4.0.1
         version: 4.0.1
       prettier:
-        specifier: ^3.3.3
-        version: 3.3.3
+        specifier: ^3.4.2
+        version: 3.4.2
       publint:
         specifier: ^0.2.12
         version: 0.2.12
@@ -4468,8 +4468,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.3.3:
-    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
+  prettier@3.4.2:
+    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -5866,7 +5866,7 @@ snapshots:
       - '@types/node'
       - typescript
 
-  '@anolilab/lint-staged-config@2.1.7(husky@9.1.7)(lint-staged@15.2.10)(prettier@3.3.3)(secretlint@8.5.0)':
+  '@anolilab/lint-staged-config@2.1.7(husky@9.1.7)(lint-staged@15.2.10)(prettier@3.4.2)(secretlint@8.5.0)':
     dependencies:
       '@anolilab/package-json-utils': 3.0.9
       find-up: 5.0.0
@@ -5874,7 +5874,7 @@ snapshots:
       lint-staged: 15.2.10
       shell-quote: 1.8.1
     optionalDependencies:
-      prettier: 3.3.3
+      prettier: 3.4.2
       secretlint: 8.5.0
 
   '@anolilab/multi-semantic-release@1.1.5(semantic-release@24.2.0(typescript@5.6.3))(typescript@5.6.3)':
@@ -5903,10 +5903,10 @@ snapshots:
       dot-path-value: 0.0.10
       read-pkg-up: 7.0.1
 
-  '@anolilab/prettier-config@5.0.14(prettier@3.3.3)':
+  '@anolilab/prettier-config@5.0.14(prettier@3.4.2)':
     dependencies:
       '@anolilab/package-json-utils': 3.0.9
-      prettier: 3.3.3
+      prettier: 3.4.2
 
   '@anolilab/textlint-config@8.0.16(textlint@14.3.0)':
     dependencies:
@@ -10975,7 +10975,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier@3.3.3: {}
+  prettier@3.4.2: {}
 
   pretty-format@29.7.0:
     dependencies:
