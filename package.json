@@ -69,7 +69,7 @@
         "nx": "^19.8.14",
         "plop": "^4.0.1",
         "prettier": "^3.4.2",
-        "publint": "^0.2.12",
+        "publint": "^0.3.0",
         "rimraf": "^6.0.1",
         "secretlint": "9.0.0",
         "semantic-release": "^24.2.1",
