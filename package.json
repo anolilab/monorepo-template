@@ -51,14 +51,14 @@
     "dependencies": {
         "@anolilab/commitlint-config": "^5.0.3",
         "@anolilab/lint-staged-config": "^2.1.7",
-        "@anolilab/multi-semantic-release": "^1.1.6",
+        "@anolilab/multi-semantic-release": "^1.1.7",
         "@anolilab/prettier-config": "^5.0.14",
         "@anolilab/textlint-config": "^8.0.16",
         "@babel/core": "^7.26.0",
         "@commitlint/cli": "^19.6.1",
         "@commitlint/config-conventional": "^19.6.0",
         "@secretlint/secretlint-rule-preset-recommend": "^9.0.0",
-        "@types/node": "22.10.3",
+        "@types/node": "22.10.6",
         "audit-ci": "^7.1.0",
         "browserslist-config-anolilab": "^5.0.14",
         "commitizen": "^4.3.1",
@@ -76,10 +76,10 @@
         "sort-package-json": "^2.12.0",
         "taze": "^0.18.0",
         "textlint": "^14.4.2",
-        "typescript": "^5.7.2",
+        "typescript": "^5.7.3",
         "vitest": "^2.1.8"
     },
-    "packageManager": "pnpm@9.15.2",
+    "packageManager": "pnpm@9.15.4",
     "engines": {
         "node": ">=18.* <=22.*"
     },
