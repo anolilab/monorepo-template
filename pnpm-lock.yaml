@@ -5,15 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  chrono-node@<2.2.4: '>=2.2.4'
+  brace-expansion@>=5.0.0 <5.0.6: '>=5.0.6'
   braces@<3.0.3: '>=3.0.3'
+  chrono-node@<2.2.4: '>=2.9.1'
+  lodash@>=4.0.0 <=4.17.23: '>=4.18.0'
+  lodash@>=4.0.0 <=4.17.22: '>=4.17.23'
+  lodash@<=4.17.23: '>=4.18.0'
   micromatch@<4.0.8: '>=4.0.8'
   tmp@<=0.2.3: '>=0.2.4'
-  lodash@>=4.0.0 <=4.17.22: '>=4.17.23'
-  yaml@>=2.0.0 <2.8.3: '>=2.8.3'
-  lodash@>=4.0.0 <=4.17.23: '>=4.18.0'
-  lodash@<=4.17.23: '>=4.18.0'
-  brace-expansion@>=5.0.0 <5.0.6: '>=5.0.6'
+  yaml@>=2.0.0 <2.8.3: '>=2.9.0'
 
 importers:
 
@@ -1141,7 +1141,7 @@ packages:
     engines: {node: '>=20.19 <=25.x'}
     os: [darwin, linux, win32]
     peerDependencies:
-      yaml: '>=2.8.3'
+      yaml: '>=2.9.0'
     peerDependenciesMeta:
       yaml:
         optional: true
@@ -5352,7 +5352,7 @@ packages:
       sugarss: ^5.0.0
       terser: ^5.16.0
       tsx: ^4.8.1
-      yaml: '>=2.8.3'
+      yaml: '>=2.9.0'
     peerDependenciesMeta:
       '@types/node':
         optional: true
