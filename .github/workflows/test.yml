@@ -110,7 +110,7 @@ jobs:
               shell: "bash"
               run: |
                   files="${{ steps.files.outputs.all_changed_files }}";
-                  pnpm run build:affected:packages --files=${files//\\/\/}
+                  pnpm run build:affected:packages --files="${files//\\/\/}"
 
             - name: "Run tests"
               shell: "bash"
@@ -118,9 +118,9 @@ jobs:
                   files="${{ steps.files.outputs.all_changed_files }}";
 
                   if [[ ${{ matrix.os }} == "ubuntu-latest" && ${{ matrix.node_version }} == 18 ]]; then
-                      pnpm run test:affected:coverage --files=${files//\\/\/}
+                      pnpm run test:affected:coverage --files="${files//\\/\/}"
                   else
-                      pnpm run test:affected --files=${files//\\/\/}
+                      pnpm run test:affected --files="${files//\\/\/}"
                   fi
 
             - name: "Prepare nx cache"
@@ -135,7 +135,7 @@ jobs:
                   codecov-token: "${{ secrets.CODECOV_TOKEN }}"
                   use-affected: "true"
                   affected-files: "${{ steps.files.outputs.all_changed_files }}"
-#                  exclude-affected-projects: ""
+                  # exclude-affected-projects: ""
 
     # This check runs once all dependant jobs have passed
     # It symbolizes that all required checks have successfully passed (Or skipped)

@@ -1,5 +1,5 @@
 name: "CodeQL"
-on:
+on: # yamllint disable-line rule:truthy
     push:
         branches: ["main"]
     pull_request:
@@ -15,5 +15,5 @@ jobs:
             contents: "read"
         uses: "anolilab/workflows/.github/workflows/codeql.yml@3bd9e3be8b2c419cf0e9237c1e78ab9a5e68bafa" # v15.1.3+
         with:
-            languages: '["javascript-typescript"]'
-            branches: '["main"]'
+            languages: "[\"javascript-typescript\"]"
+            branches: "[\"main\"]"
