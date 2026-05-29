@@ -6,10 +6,10 @@ settings:
 
 overrides:
   brace-expansion@>=5.0.0 <5.0.6: ^5.0.6
-  chrono-node@<2.2.4: ^2.2.4
+  chrono-node@<2.2.4: ^2.2.7
   lodash@<=4.17.23: ^4.17.24
   tmp@<0.2.6: ^0.2.6
-  yaml@>=2.0.0 <2.8.3: ^2.8.3
+  yaml@>=2.0.0 <2.8.3: ^2.8.4
 
 importers:
 
@@ -22,7 +22,7 @@ importers:
         specifier: ^11.0.1
         version: 11.0.1(@types/node@25.9.1)(husky@9.1.7)(lint-staged@17.0.5)(prettier@3.8.3)(secretlint@13.0.2)(vitest@4.1.7(@types/node@25.9.1)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)
       '@anolilab/multi-semantic-release':
-        specifier: ^4.4.3
+        specifier: ^4.4.4
         version: 4.4.4(semantic-release@25.0.3(typescript@6.0.3))(typescript@6.0.3)
       '@anolilab/prettier-config':
         specifier: ^10.0.1
@@ -1148,7 +1148,7 @@ packages:
     engines: {node: '>=20.19 <=25.x'}
     os: [darwin, linux, win32]
     peerDependencies:
-      yaml: ^2.8.3
+      yaml: ^2.8.4
     peerDependenciesMeta:
       yaml:
         optional: true
@@ -5372,7 +5372,7 @@ packages:
       sugarss: ^5.0.0
       terser: ^5.16.0
       tsx: ^4.8.1
-      yaml: ^2.8.3
+      yaml: ^2.8.4
     peerDependenciesMeta:
       '@types/node':
         optional: true

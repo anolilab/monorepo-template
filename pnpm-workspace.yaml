@@ -14,7 +14,7 @@ minimumReleaseAgeExclude:
   - brace-expansion@5.0.6
 overrides:
   brace-expansion@>=5.0.0 <5.0.6: ^5.0.6
-  chrono-node@<2.2.4: ^2.2.4
+  chrono-node@<2.2.4: ^2.2.7
   lodash@<=4.17.23: ^4.17.24
   tmp@<0.2.6: ^0.2.6
-  yaml@>=2.0.0 <2.8.3: ^2.8.3
+  yaml@>=2.0.0 <2.8.3: ^2.8.4
