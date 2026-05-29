@@ -20,10 +20,10 @@ importers:
         version: 10.0.1(@commitlint/cli@21.0.1(@types/node@25.9.1)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(typescript@6.0.3))(@types/node@25.9.1)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(typescript@6.0.3)
       '@anolilab/lint-staged-config':
         specifier: ^11.0.1
-        version: 11.0.1(@types/node@25.9.1)(husky@9.1.7)(lint-staged@17.0.5)(prettier@3.8.3)(secretlint@13.0.2)(vitest@4.1.7(@types/node@25.9.1)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.8.3)))(yaml@2.8.3)
+        version: 11.0.1(@types/node@25.9.1)(husky@9.1.7)(lint-staged@17.0.5)(prettier@3.8.3)(secretlint@13.0.2)(vitest@4.1.7(@types/node@25.9.1)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)
       '@anolilab/multi-semantic-release':
-        specifier: ^4.4.1
-        version: 4.4.1(semantic-release@25.0.3(typescript@6.0.3))(typescript@6.0.3)
+        specifier: ^4.4.3
+        version: 4.4.4(semantic-release@25.0.3(typescript@6.0.3))(typescript@6.0.3)
       '@anolilab/prettier-config':
         specifier: ^10.0.1
         version: 10.0.1(prettier@3.8.3)
@@ -101,7 +101,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: ^4.1.7
-        version: 4.1.7(@types/node@25.9.1)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.8.3))
+        version: 4.1.7(@types/node@25.9.1)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))
 
 packages:
 
@@ -156,8 +156,8 @@ packages:
       vitest:
         optional: true
 
-  '@anolilab/multi-semantic-release@4.4.1':
-    resolution: {integrity: sha512-0fuSPdSV+lkYUBHnaiKx4oPj56Cbz8NFgAwUfhjk4/OsnvGpoeCJz7x2gzBzNgHK9g1Baw5+gNCfNd88M6rNsw==}
+  '@anolilab/multi-semantic-release@4.4.4':
+    resolution: {integrity: sha512-+Fij1KGStok+4tADLpZGj1goUyaeZlbqZ41hrH/PB5R0NWBWqKsSbv1+1yffeIPK6nOKgIizBHO7EWmeJFhgDA==}
     engines: {node: ^22.14.0 || >=24.10.0}
     os: [darwin, linux, win32]
     hasBin: true
@@ -5545,11 +5545,6 @@ packages:
   yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
 
-  yaml@2.8.3:
-    resolution: {integrity: sha512-AvbaCLOO2Otw/lW5bmh9d/WEdcDFdQp2Z2ZUH3pX9U2ihyUY0nvLv7J6TrWowklRGPYbB/IuIMfYgxaCPg5Bpg==}
-    engines: {node: '>= 14.6'}
-    hasBin: true
-
   yaml@2.9.0:
     resolution: {integrity: sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==}
     engines: {node: '>= 14.6'}
@@ -5637,9 +5632,9 @@ snapshots:
       - conventional-commits-parser
       - typescript
 
-  '@anolilab/lint-staged-config@11.0.1(@types/node@25.9.1)(husky@9.1.7)(lint-staged@17.0.5)(prettier@3.8.3)(secretlint@13.0.2)(vitest@4.1.7(@types/node@25.9.1)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.8.3)))(yaml@2.8.3)':
+  '@anolilab/lint-staged-config@11.0.1(@types/node@25.9.1)(husky@9.1.7)(lint-staged@17.0.5)(prettier@3.8.3)(secretlint@13.0.2)(vitest@4.1.7(@types/node@25.9.1)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)':
     dependencies:
-      '@visulima/fs': 4.1.0(yaml@2.8.3)
+      '@visulima/fs': 4.1.0(yaml@2.9.0)
       '@visulima/package': 4.1.7(@types/node@25.9.1)
       husky: 9.1.7
       shell-quote: 1.8.3
@@ -5648,15 +5643,15 @@ snapshots:
       lint-staged: 17.0.5
       prettier: 3.8.3
       secretlint: 13.0.2
-      vitest: 4.1.7(@types/node@25.9.1)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.8.3))
+      vitest: 4.1.7(@types/node@25.9.1)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))
     transitivePeerDependencies:
       - '@types/node'
       - yaml
 
-  '@anolilab/multi-semantic-release@4.4.1(semantic-release@25.0.3(typescript@6.0.3))(typescript@6.0.3)':
+  '@anolilab/multi-semantic-release@4.4.4(semantic-release@25.0.3(typescript@6.0.3))(typescript@6.0.3)':
     dependencies:
       '@semrel-extra/topo': 1.14.1
-      '@visulima/fs': 4.1.0(yaml@2.8.3)
+      '@visulima/fs': 4.1.0(yaml@2.9.0)
       '@visulima/path': 2.0.5
       cosmiconfig: 9.0.1(typescript@6.0.3)
       debug: 4.4.3
@@ -5667,10 +5662,10 @@ snapshots:
       lodash-es: 4.18.1
       resolve-from: 5.0.0
       semantic-release: 25.0.3(typescript@6.0.3)
-      semver: 7.7.4
+      semver: 7.8.1
       signale: 1.4.0
       stream-buffers: 3.0.3
-      yaml: 2.8.3
+      yaml: 2.9.0
       yargs: 18.0.0
     transitivePeerDependencies:
       - supports-color
@@ -6988,13 +6983,6 @@ snapshots:
 
   '@types/unist@2.0.11': {}
 
-  '@visulima/fs@4.1.0(yaml@2.8.3)':
-    dependencies:
-      '@visulima/path': 2.0.5
-      type-fest: 5.6.0
-    optionalDependencies:
-      yaml: 2.8.3
-
   '@visulima/fs@4.1.0(yaml@2.9.0)':
     dependencies:
       '@visulima/path': 2.0.5
@@ -7025,13 +7013,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.7(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.8.3))':
+  '@vitest/mocker@4.1.7(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))':
     dependencies:
       '@vitest/spy': 4.1.7
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.8.3)
+      vite: 8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0)
 
   '@vitest/pretty-format@4.1.7':
     dependencies:
@@ -12074,7 +12062,7 @@ snapshots:
       unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.4
 
-  vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.8.3):
+  vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -12085,12 +12073,12 @@ snapshots:
       '@types/node': 25.9.1
       fsevents: 2.3.3
       jiti: 2.7.0
-      yaml: 2.8.3
+      yaml: 2.9.0
 
-  vitest@4.1.7(@types/node@25.9.1)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.8.3)):
+  vitest@4.1.7(@types/node@25.9.1)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0)):
     dependencies:
       '@vitest/expect': 4.1.7
-      '@vitest/mocker': 4.1.7(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.8.3))
+      '@vitest/mocker': 4.1.7(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))
       '@vitest/pretty-format': 4.1.7
       '@vitest/runner': 4.1.7
       '@vitest/snapshot': 4.1.7
@@ -12107,7 +12095,7 @@ snapshots:
       tinyexec: 1.1.2
       tinyglobby: 0.2.16
       tinyrainbow: 3.1.0
-      vite: 8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.8.3)
+      vite: 8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 25.9.1
@@ -12250,8 +12238,6 @@ snapshots:
   yallist@3.1.1: {}
 
   yallist@4.0.0: {}
-
-  yaml@2.8.3: {}
 
   yaml@2.9.0: {}
 
