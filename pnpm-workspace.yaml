@@ -1,5 +1,20 @@
 packages:
-    - "!**/__test__/**"
-    - "!**/__tests__/**"
-    - "!**/__fixtures__/**"
-    - "packages/**"
+  - "!**/__test__/**"
+  - "!**/__tests__/**"
+  - "!**/__fixtures__/**"
+  - "packages/**"
+allowBuilds:
+  nx: false
+minimumReleaseAgeExclude:
+  - tmp@0.2.6
+  - chrono-node@2.2.4
+  - lodash@4.17.23
+  - yaml@2.8.3
+  - lodash@4.17.24
+  - brace-expansion@5.0.6
+overrides:
+  brace-expansion@>=5.0.0 <5.0.6: ^5.0.6
+  chrono-node@<2.2.4: ^2.2.4
+  lodash@<=4.17.23: ^4.17.24
+  tmp@<0.2.6: ^0.2.6
+  yaml@>=2.0.0 <2.8.3: ^2.8.3
