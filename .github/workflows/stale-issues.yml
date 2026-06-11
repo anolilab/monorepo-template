@@ -6,6 +6,6 @@ on: # yamllint disable-line rule:truthy
 
 jobs:
     stale-issues:
-        uses: "anolilab/workflows/.github/workflows/stale-issues.yml@fbf35001fcbda1c67184c69f3695f06b963d377a" # main
+        uses: "anolilab/workflows/.github/workflows/stale-issues.yml@d7d84717329a45c2b5ffbda19ae76d8604f61c00" # main
         with:
             target-repo: "{{ ORGANIZATIONS }}/{{ REPOSITORY_NAME }}"
