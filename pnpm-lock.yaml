@@ -6,11 +6,11 @@ settings:
 
 overrides:
   brace-expansion@>=5.0.0 <5.0.6: ^5.0.6
-  chrono-node@<2.2.4: ^2.2.4
+  chrono-node@<2.2.4: ^2.9.1
   lodash@<=4.17.23: ^4.17.24
   shell-quote@>=1.1.0 <=1.8.3: ^1.8.4
   tmp@<0.2.6: ^0.2.6
-  yaml@>=2.0.0 <2.8.3: ^2.8.3
+  yaml@>=2.0.0 <2.8.3: ^2.9.0
 
 importers:
 
@@ -89,8 +89,8 @@ importers:
         specifier: ^25.0.3
         version: 25.0.3(typescript@6.0.3)
       sort-package-json:
-        specifier: ^3.6.1
-        version: 3.6.1
+        specifier: ^3.7.1
+        version: 3.7.1
       taze:
         specifier: ^19.14.1
         version: 19.14.1
@@ -1149,7 +1149,7 @@ packages:
     engines: {node: '>=20.19 <=25.x'}
     os: [darwin, linux, win32]
     peerDependencies:
-      yaml: ^2.8.3
+      yaml: ^2.9.0
     peerDependenciesMeta:
       yaml:
         optional: true
@@ -4660,8 +4660,8 @@ packages:
   sort-object-keys@2.1.0:
     resolution: {integrity: sha512-SOiEnthkJKPv2L6ec6HMwhUcN0/lppkeYuN1x63PbyPRrgSPIuBJCiYxYyvWRTtjMlOi14vQUCGUJqS6PLVm8g==}
 
-  sort-package-json@3.6.1:
-    resolution: {integrity: sha512-Chgejw1+10p2D0U2tB7au1lHtz6TkFnxmvZktyBCRyV0GgmF6nl1IxXxAsPtJVsUyg/fo+BfCMAVVFUVRkAHrQ==}
+  sort-package-json@3.7.1:
+    resolution: {integrity: sha512-ssk1HG7whF8N/T1IsNAQrtHG5Cbdi0rAgRJZXYBr9hF5xaHnBNzUx/W6LcthEW7FhOwvZssbESZuO+GxssqAyA==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -5369,7 +5369,7 @@ packages:
       sugarss: ^5.0.0
       terser: ^5.16.0
       tsx: ^4.8.1
-      yaml: ^2.8.3
+      yaml: ^2.9.0
     peerDependenciesMeta:
       '@types/node':
         optional: true
@@ -11185,7 +11185,7 @@ snapshots:
 
   sort-object-keys@2.1.0: {}
 
-  sort-package-json@3.6.1:
+  sort-package-json@3.7.1:
     dependencies:
       detect-indent: 7.0.2
       detect-newline: 4.0.1
