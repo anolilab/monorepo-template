@@ -61,3 +61,5 @@ If you would like to help take a look at the [list of issues](https://github.com
 ## License
 
 The anolilab monorepo-template is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
+
+<!-- CI verification for preinstall fix (commit 2817700) -->
