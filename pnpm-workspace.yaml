@@ -5,6 +5,8 @@ packages:
   - "packages/**"
 allowBuilds:
   nx: false
+blockExoticSubdeps: true
+minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
   - tmp@0.2.6
   - chrono-node@2.2.4
