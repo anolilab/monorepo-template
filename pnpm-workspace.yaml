@@ -17,8 +17,8 @@ minimumReleaseAgeExclude:
   - shell-quote@1.8.4
 overrides:
   brace-expansion@>=5.0.0 <5.0.6: ^5.0.6
-  chrono-node@<2.2.4: ^2.2.4
+  chrono-node@<2.2.4: ^2.2.7
   lodash@<=4.17.23: ^4.17.24
   shell-quote@>=1.1.0 <=1.8.3: ^1.8.4
-  tmp@<0.2.6: ^0.2.6
-  yaml@>=2.0.0 <2.8.3: ^2.8.3
+  tmp@<0.2.6: ^0.2.7
+  yaml@>=2.0.0 <2.8.3: ^2.8.4
