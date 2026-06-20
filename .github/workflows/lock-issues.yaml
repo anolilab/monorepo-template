@@ -13,6 +13,6 @@ permissions:
 
 jobs:
     lock-closed:
-        uses: "anolilab/workflows/.github/workflows/lock-closed.yml@fbf35001fcbda1c67184c69f3695f06b963d377a" # main
+        uses: "anolilab/workflows/.github/workflows/lock-closed.yml@acba5fb15ac98ad23dec1ad233e40e1bb79c1dae" # main
         with:
             target-repo: "anolilab/monorepo-template"
