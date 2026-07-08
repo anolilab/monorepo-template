@@ -50,10 +50,10 @@
     ],
     "dependencies": {
         "@anolilab/commitlint-config": "^10.0.1",
-        "@anolilab/lint-staged-config": "^11.0.10",
+        "@anolilab/lint-staged-config": "^11.0.11",
         "@anolilab/multi-semantic-release": "^4.4.5",
         "@anolilab/prettier-config": "^10.0.1",
-        "@anolilab/textlint-config": "^13.0.3",
+        "@anolilab/textlint-config": "^13.0.4",
         "@babel/core": "^7.29.7",
         "@commitlint/cli": "^21.0.2",
         "@commitlint/config-conventional": "^21.0.2",

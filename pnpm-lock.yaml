@@ -28,8 +28,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(@commitlint/cli@21.0.2(@types/node@25.9.3)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(typescript@6.0.3))(@types/node@25.9.3)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)(typescript@6.0.3)
       '@anolilab/lint-staged-config':
-        specifier: ^11.0.10
-        version: 11.0.10(@types/node@25.9.3)(husky@9.1.7)(lint-staged@17.0.8)(prettier@3.9.4)(secretlint@13.0.2)(vitest@4.1.9(@types/node@25.9.3)(vite@8.0.16(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)
+        specifier: ^11.0.11
+        version: 11.0.11(@types/node@25.9.3)(husky@9.1.7)(lint-staged@17.0.8)(prettier@3.9.4)(secretlint@13.0.2)(vitest@4.1.9(@types/node@25.9.3)(vite@8.0.16(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)
       '@anolilab/multi-semantic-release':
         specifier: ^4.4.5
         version: 4.4.5(semantic-release@25.0.5(typescript@6.0.3))(typescript@6.0.3)
@@ -37,8 +37,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(prettier@3.9.4)
       '@anolilab/textlint-config':
-        specifier: ^13.0.3
-        version: 13.0.3(textlint@15.7.1)
+        specifier: ^13.0.4
+        version: 13.0.4(textlint@15.7.1)
       '@babel/core':
         specifier: ^7.29.7
         version: 7.29.7
@@ -133,8 +133,8 @@ packages:
     peerDependencies:
       '@commitlint/cli': ^17.6.5 || ^18.x || ^19.x || ^20.0.0
 
-  '@anolilab/lint-staged-config@11.0.10':
-    resolution: {integrity: sha512-jFAlSA6lrd9FrxBUs+T1C4VlN/rRryZr95ifglQFU3iPfl2k4fmh7VPs3+VP07kHhGS7JrE5F0i8P7cGLYfYCA==}
+  '@anolilab/lint-staged-config@11.0.11':
+    resolution: {integrity: sha512-/y3FUzwpdtMysubdfOe0UGJrQPb0qgR1KL3xicddejeLy/ppC4YF9lvQzToeW4UJGF8gTuCuZhOUiY70kQIWfw==}
     engines: {node: '>=22.12.0 <=25.*'}
     hasBin: true
     peerDependencies:
@@ -180,8 +180,8 @@ packages:
     peerDependencies:
       prettier: 3.8.3
 
-  '@anolilab/textlint-config@13.0.3':
-    resolution: {integrity: sha512-2aCL0hbPtml0CYn9+YeIX8I8n6TYIy0GuolGn82tP3clyeBAEPS2HB0oo1J/kB488p0i4r6hWIdWKaalPBdRTg==}
+  '@anolilab/textlint-config@13.0.4':
+    resolution: {integrity: sha512-QhsZ3y9Nz1GoVuafbwtXjWodDWgYGNp974ZiW6r55KnAWC86HkCK8M/SHOdPFL+5NAioKdFchwnCjo7AzrRWKg==}
     engines: {node: '>=22.12.0 <=25.*'}
     hasBin: true
     peerDependencies:
@@ -5643,7 +5643,7 @@ snapshots:
       - conventional-commits-parser
       - typescript
 
-  '@anolilab/lint-staged-config@11.0.10(@types/node@25.9.3)(husky@9.1.7)(lint-staged@17.0.8)(prettier@3.9.4)(secretlint@13.0.2)(vitest@4.1.9(@types/node@25.9.3)(vite@8.0.16(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)':
+  '@anolilab/lint-staged-config@11.0.11(@types/node@25.9.3)(husky@9.1.7)(lint-staged@17.0.8)(prettier@3.9.4)(secretlint@13.0.2)(vitest@4.1.9(@types/node@25.9.3)(vite@8.0.16(@types/node@25.9.3)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)':
     dependencies:
       '@visulima/fs': 4.1.0(yaml@2.9.0)
       '@visulima/package': 4.1.7(@types/node@25.9.3)
@@ -5686,7 +5686,7 @@ snapshots:
     dependencies:
       prettier: 3.9.4
 
-  '@anolilab/textlint-config@13.0.3(textlint@15.7.1)':
+  '@anolilab/textlint-config@13.0.4(textlint@15.7.1)':
     dependencies:
       '@textlint-rule/textlint-rule-no-invalid-control-character': 3.0.0
       '@textlint-rule/textlint-rule-no-unmatched-pair': 2.0.4
