@@ -7,7 +7,7 @@ settings:
 overrides:
   brace-expansion@>=5.0.0 <5.0.6: ^5.0.7
   braces@<3.0.3: '>=3.0.3'
-  chrono-node@<2.2.4: ^2.9.1
+  chrono-node@<2.2.4: ^2.9.2
   form-data@>=4.0.0 <4.0.6: '>=4.0.6'
   lodash@<=4.17.23: ^4.17.24
   micromatch@<4.0.8: '>=4.0.8'
@@ -1584,8 +1584,8 @@ packages:
   charenc@0.0.2:
     resolution: {integrity: sha512-yrLQ/yVUFXkzg7EDQsPieE/53+0RlaWTs+wBrvW36cyilJ2SaDWfl4Yj7MtLTXleV9uEKefbAGUPv2/iWSooRA==}
 
-  chrono-node@2.9.1:
-    resolution: {integrity: sha512-nqP8Zp11efCYQIESXPxeDM8ikzN5BDb3Zzou+a66fZq+X2hzKFdsNLQE2/uBAh//BZEMbaMo1eTnagK7hOenAg==}
+  chrono-node@2.10.0:
+    resolution: {integrity: sha512-5fJ4zr5W/5DEf+8FMPMXF2qk9L5dc1rAP9Pw009iMlKAghPgx5o7aUcnjEMe6PTwqiqTa5yzmfSm05EHuwr31Q==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   ci-info@3.9.0:
@@ -7488,7 +7488,7 @@ snapshots:
 
   charenc@0.0.2: {}
 
-  chrono-node@2.9.1: {}
+  chrono-node@2.10.0: {}
 
   ci-info@3.9.0: {}
 
@@ -11570,7 +11570,7 @@ snapshots:
 
   textlint-rule-date-weekday-mismatch@1.1.1:
     dependencies:
-      chrono-node: 2.9.1
+      chrono-node: 2.10.0
       moment: 2.30.1
       textlint-tester: 12.6.1
     transitivePeerDependencies:
