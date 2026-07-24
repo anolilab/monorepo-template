@@ -28,12 +28,12 @@ jobs:
 
         steps:
             - name: "Harden Runner"
-              uses: "step-security/harden-runner@9af89fc71515a100421586dfdb3dc9c984fbf411" # v2.19.4
+              uses: "step-security/harden-runner@bf7454d06d71f1098171f2acdf0cd4708d7b5920" # v2.20.0
               with:
                   egress-policy: "audit"
 
             - name: "Wait for tests to succeed"
-              uses: "lewagon/wait-on-check-action@96d9100b431964d10e0136aff8b9ccb92470505e" # v1.8.0
+              uses: "lewagon/wait-on-check-action@1d57e2c51a58d812d2765e036a028b6bdb5a6154" # v1.8.1
               timeout-minutes: 20
               with:
                   ref: "${{ github.event.pull_request.head.sha || github.sha }}"
@@ -43,7 +43,7 @@ jobs:
                   allowed-conclusions: "success,skipped" # all other checks must pass, being skipped or cancelled is not sufficient
 
             - name: "Git checkout"
-              uses: "actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0" # v7.0.0
+              uses: "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1" # v7.0.1
               with:
                   fetch-depth: 0
                   persist-credentials: false
@@ -54,7 +54,7 @@ jobs:
 
             - name: "Setup resources and environment"
               id: "setup"
-              uses: "anolilab/workflows/step/setup@acba5fb15ac98ad23dec1ad233e40e1bb79c1dae" # main
+              uses: "anolilab/workflows/step/setup@d1dd8f0d24d4758e2d4a3322fa11d5609e2d446b" # main
               with:
                   node-version: "18.x"
                   cache-prefix: "semantic-release"
@@ -70,7 +70,7 @@ jobs:
               run: "tar -cf - .nx/cache | lz4 > /tmp/nx_cache.tar.lz4" # compress nx cache
 
             - name: "Upload code coverage to codecov"
-              uses: "anolilab/workflows/step/codecov@acba5fb15ac98ad23dec1ad233e40e1bb79c1dae" # main
+              uses: "anolilab/workflows/step/codecov@d1dd8f0d24d4758e2d4a3322fa11d5609e2d446b" # main
               with:
                   run-lint: "false"
                   codecov-token: "${{ secrets.CODECOV_TOKEN }}"
