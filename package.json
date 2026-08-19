@@ -65,7 +65,7 @@
         "cross-env": "^10.1.0",
         "husky": "^9.1.7",
         "is-ci": "^4.1.0",
-        "lint-staged": "^17.0.8",
+        "lint-staged": "^17.3.0",
         "nx": "^23.1.1",
         "plop": "^4.0.5",
         "prettier": "^3.9.6",
@@ -74,12 +74,12 @@
         "secretlint": "13.0.4",
         "semantic-release": "^25.0.9",
         "sort-package-json": "^4.0.0",
-        "taze": "^19.14.1",
+"taze": "^19.17.2",
         "textlint": "^15.8.0",
         "typescript": "^7.0.2",
         "vitest": "^4.1.10"
     },
-    "packageManager": "pnpm@11.11.0",
+    "packageManager": "pnpm@11.21.0",
     "engines": {
         "node": ">=24"
     }
