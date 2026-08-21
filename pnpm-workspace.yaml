@@ -30,7 +30,7 @@ overrides:
   undici@>=7.0.0 <7.28.0: ">=8.10.0"
   "@actions/http-client>undici": ">=8.10.0"
   yaml@>=2.0.0 <2.8.3: ^2.9.0
-  brace-expansion@<1.1.17: ">=2.1.4"
+  brace-expansion@<1.1.17: ">=5.0.9"
   brace-expansion@>=2.0.0 <2.1.2: ">=5.0.9"
   brace-expansion@>=4.0.0 <5.0.9: ">=5.0.9"
   js-yaml@>=4.0.0 <4.3.1: "^4.3.1"
