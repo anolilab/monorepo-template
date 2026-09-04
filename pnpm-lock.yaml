@@ -22,7 +22,7 @@ overrides:
   brace-expansion@<1.1.17: '>=2.1.4'
   brace-expansion@>=2.0.0 <2.1.2: '>=5.0.9'
   brace-expansion@>=4.0.0 <5.0.9: '>=5.0.9'
-  js-yaml@>=4.0.0 <4.3.1: ^4.3.1
+  js-yaml@>=4.0.0 <4.3.1: ^5.4.1
   fast-uri@>=3.0.0 <3.1.5: '>=3.1.5 <4'
   postcss@<=8.5.22: '>=8.5.23 <9'
   ip-address@<=10.3.0: '>=10.5.0'
@@ -3049,8 +3049,8 @@ packages:
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
-  js-yaml@4.3.1:
-    resolution: {integrity: sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==}
+  js-yaml@5.4.1:
+    resolution: {integrity: sha512-28R/k+NAjeuf7+CKlTxWZVExJGwVVLwY06DgEnOMz2gEpfNkDcD7QvyiVPT0xy0XXhU8vHsd4Ot42OOPdJG7dQ==}
     hasBin: true
 
   jsesc@3.1.0:
@@ -6347,7 +6347,7 @@ snapshots:
   '@semrel-extra/topo@1.14.1':
     dependencies:
       fast-glob: 3.3.3
-      js-yaml: 4.3.1
+      js-yaml: 5.4.1
       toposource: 1.2.0
 
   '@simple-libs/child-process-utils@2.0.0':
@@ -6587,7 +6587,7 @@ snapshots:
       '@textlint/types': 15.7.1
       chalk: 4.1.2
       debug: 4.4.3(supports-color@7.2.0)
-      js-yaml: 4.3.1
+      js-yaml: 5.4.1
       lodash: 4.18.1
       pluralize: 2.0.0
       string-width: 4.2.3
@@ -6605,7 +6605,7 @@ snapshots:
       '@textlint/resolver': 15.8.0
       '@textlint/types': 15.8.0
       debug: 4.4.3(supports-color@7.2.0)
-      js-yaml: 4.3.1
+      js-yaml: 5.4.1
       lodash: 4.18.1
       pluralize: 2.0.0
       string-width: 4.2.3
@@ -7479,13 +7479,13 @@ snapshots:
   cosmiconfig@10.0.0:
     dependencies:
       env-paths: 2.2.1
-      js-yaml: 4.3.1
+      js-yaml: 5.4.1
 
   cosmiconfig@9.0.2(typescript@7.0.2):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
-      js-yaml: 4.3.1
+      js-yaml: 5.4.1
       parse-json: 5.2.0
     optionalDependencies:
       typescript: 7.0.2
@@ -8813,7 +8813,7 @@ snapshots:
 
   js-tokens@4.0.0: {}
 
-  js-yaml@4.3.1:
+  js-yaml@5.4.1:
     dependencies:
       argparse: 2.0.1
 
@@ -10372,7 +10372,7 @@ snapshots:
   rc-config-loader@4.1.4(supports-color@7.2.0):
     dependencies:
       debug: 4.4.3(supports-color@7.2.0)
-      js-yaml: 4.3.1
+      js-yaml: 5.4.1
       json5: 2.2.3
       require-from-string: 2.0.2
     transitivePeerDependencies:
