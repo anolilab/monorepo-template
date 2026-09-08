@@ -83,7 +83,7 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
       lint-staged:
-        specifier: ^17.4.1
+        specifier: ^17.5.0
         version: 17.5.0
       nx:
         specifier: ^23.2.0
