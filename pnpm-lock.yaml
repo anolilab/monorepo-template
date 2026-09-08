@@ -110,8 +110,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0
       taze:
-        specifier: ^19.17.2
-        version: 19.17.2
+        specifier: ^20.0.2
+        version: 20.0.2
       textlint:
         specifier: ^15.8.0
         version: 15.8.0(supports-color@7.2.0)
@@ -4809,8 +4809,8 @@ packages:
     resolution: {integrity: sha512-ujeqbceABgwMZxEJnk2HDY2DlnUZ+9oEcb1KzTVfYHio0UE6dG71n60d8D2I4qNvleWrrXpmjpt7vZeF1LnMZQ==}
     engines: {node: '>=6'}
 
-  taze@19.17.2:
-    resolution: {integrity: sha512-1WH+LUf5H0R07EF606fuP5TuHPVvtrMIPpn69EkqaOVJYg0foL8xnD+lEs0s19Zfmplul5nRd3TpbbF0twXCkw==}
+  taze@20.0.2:
+    resolution: {integrity: sha512-OlY3OEHIeVq7kSfidnkpEPE8Gqn1DgDU05Q4kdVrjrvVN8OIWu4xci+hK9DXofprHyw29vkgBpaz7n8dEUcHng==}
     hasBin: true
 
   temp-dir@3.0.0:
@@ -11101,7 +11101,7 @@ snapshots:
       inherits: 2.0.4
       readable-stream: 3.6.2
 
-  taze@19.17.2:
+  taze@20.0.2:
     dependencies:
       '@antfu/ni': 30.5.0
       '@henrygd/queue': 1.2.0
