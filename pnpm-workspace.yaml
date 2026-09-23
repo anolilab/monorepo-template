@@ -16,7 +16,7 @@ minimumReleaseAgeExclude:
   - brace-expansion@5.0.6
   - shell-quote@1.8.4
 overrides:
-  brace-expansion@>=5.0.0 <5.0.6: ^5.0.9
+  brace-expansion@>=5.0.0 <5.0.6: ^5.0.12
   braces@<3.0.3: ">=3.0.3"
   chrono-node@<2.2.4: ^2.10.1
   form-data@>=4.0.0 <4.0.6: ">=4.0.6"
@@ -29,14 +29,14 @@ overrides:
   undici@<6.27.0: ">=8.10.2"
   undici@>=7.0.0 <7.28.0: ">=8.10.2"
   "@actions/http-client>undici": ">=8.10.2"
-  yaml@>=2.0.0 <2.8.3: ^2.9.0
-  brace-expansion@<1.1.17: ">=5.0.9"
-  brace-expansion@>=2.0.0 <2.1.2: ">=5.0.9"
-  brace-expansion@>=4.0.0 <5.0.9: ">=5.0.9"
-  js-yaml@>=4.0.0 <4.3.1: "^5.4.1"
+  yaml@>=2.0.0 <2.8.3: ^2.9.1
+  brace-expansion@<1.1.17: ">=5.0.12"
+  brace-expansion@>=2.0.0 <2.1.2: ">=5.0.12"
+  brace-expansion@>=4.0.0 <5.0.9: ">=5.0.12"
+  js-yaml@>=4.0.0 <4.3.1: "^5.4.2"
   fast-uri@>=3.0.0 <3.1.5: ">=3.1.5 <5"
   postcss@<=8.5.22: ">=8.5.23 <9"
-  ip-address@<=10.3.0: ">=10.7.0"
+  ip-address@<=10.3.0: ">=10.7.2"
   nanoid@<3.3.17: ">=6.0.1"
   hono@>=4.0.0 <4.12.34: ">=4.12.34 <5"
   "@hono/node-server@<2.0.5": ">=2.1.1"

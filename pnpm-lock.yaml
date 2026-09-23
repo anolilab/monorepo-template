@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  brace-expansion@>=5.0.0 <5.0.6: ^5.0.9
+  brace-expansion@>=5.0.0 <5.0.6: ^5.0.12
   braces@<3.0.3: '>=3.0.3'
   chrono-node@<2.2.4: ^2.10.1
   form-data@>=4.0.0 <4.0.6: '>=4.0.6'
@@ -18,14 +18,14 @@ overrides:
   undici@<6.27.0: '>=8.10.2'
   undici@>=7.0.0 <7.28.0: '>=8.10.2'
   '@actions/http-client>undici': '>=8.10.2'
-  yaml@>=2.0.0 <2.8.3: ^2.9.0
-  brace-expansion@<1.1.17: '>=5.0.9'
-  brace-expansion@>=2.0.0 <2.1.2: '>=5.0.9'
-  brace-expansion@>=4.0.0 <5.0.9: '>=5.0.9'
-  js-yaml@>=4.0.0 <4.3.1: ^5.4.1
+  yaml@>=2.0.0 <2.8.3: ^2.9.1
+  brace-expansion@<1.1.17: '>=5.0.12'
+  brace-expansion@>=2.0.0 <2.1.2: '>=5.0.12'
+  brace-expansion@>=4.0.0 <5.0.9: '>=5.0.12'
+  js-yaml@>=4.0.0 <4.3.1: ^5.4.2
   fast-uri@>=3.0.0 <3.1.5: '>=3.1.5 <5'
   postcss@<=8.5.22: '>=8.5.23 <9'
-  ip-address@<=10.3.0: '>=10.7.0'
+  ip-address@<=10.3.0: '>=10.7.2'
   nanoid@<3.3.17: '>=6.0.1'
   hono@>=4.0.0 <4.12.34: '>=4.12.34 <5'
   '@hono/node-server@<2.0.5': '>=2.1.1'
@@ -35,14 +35,14 @@ importers:
   .:
     dependencies:
       '@anolilab/commitlint-config':
-        specifier: ^10.1.2
-        version: 10.1.2(@commitlint/cli@21.2.2(@types/node@25.9.5)(conventional-commits-parser@7.1.2)(typescript@7.0.2))(@types/node@25.9.5)(conventional-commits-parser@7.1.2)(typescript@7.0.2)
+        specifier: ^10.1.3
+        version: 10.1.3(@commitlint/cli@21.2.2(@types/node@25.9.5)(conventional-commits-parser@7.1.2)(typescript@7.0.2))(@types/node@25.9.5)(conventional-commits-parser@7.1.2)(typescript@7.0.2)
       '@anolilab/lint-staged-config':
         specifier: ^11.1.3
-        version: 11.1.3(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.5.0)(prettier@3.9.6)(secretlint@13.0.5(supports-color@7.2.0))(vitest@4.1.11(@types/node@25.9.5)(vite@8.2.2(@types/node@25.9.5)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)
+        version: 11.1.3(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.5.1)(prettier@3.9.6)(secretlint@13.0.5(supports-color@7.2.0))(vitest@4.1.11(@types/node@25.9.5)(vite@8.2.2(@types/node@25.9.5)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)
       '@anolilab/multi-semantic-release':
-        specifier: ^4.4.9
-        version: 4.4.9(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)
+        specifier: ^4.4.16
+        version: 4.4.16(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)
       '@anolilab/prettier-config':
         specifier: ^10.0.3
         version: 10.0.3(prettier@3.9.6)
@@ -83,8 +83,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
       lint-staged:
-        specifier: ^17.4.1
-        version: 17.5.0
+        specifier: ^17.5.1
+        version: 17.5.1
       nx:
         specifier: ^23.2.0
         version: 23.2.0
@@ -136,8 +136,8 @@ packages:
   '@actions/io@3.0.2':
     resolution: {integrity: sha512-nRBchcMM+QK1pdjO7/idu86rbJI5YHUKCvKs0KxnSYbVe3F51UfGxuZX4Qy/fWlp6l7gWFwIkrOzN+oUK03kfw==}
 
-  '@anolilab/commitlint-config@10.1.2':
-    resolution: {integrity: sha512-JG8sCEroVe67dgLx5VKFZlOO8b5PDO9zfH6fDAuQbXlm5YmF0aFEQVJxhDDGP7jXXfXuPxwzvskx8EMzalRnMA==}
+  '@anolilab/commitlint-config@10.1.3':
+    resolution: {integrity: sha512-b6MSmjshoMmPAYvA1vsfmhOMM3gOjk+IyFGIoS3E7AexhThhRsDj7UeUiK5fBxHNu4A2phEznT2PpQIoUjcPjQ==}
     engines: {node: '>=22.12.0 <=25.*'}
     hasBin: true
     peerDependencies:
@@ -175,8 +175,8 @@ packages:
       vitest:
         optional: true
 
-  '@anolilab/multi-semantic-release@4.4.9':
-    resolution: {integrity: sha512-QmFf/1cvloUAeSys30OKi2jVZxdmTGBT8Kyvd9xxyUSj/oXUlTCMeXmzszwlMqrmuE0/JRMMfmy3vllfWPPFCA==}
+  '@anolilab/multi-semantic-release@4.4.16':
+    resolution: {integrity: sha512-hgP/XHNHh0TX1Sl3L8cfWMkTII2uLs+kDfsLpdW6yj8WZv6avn6XcAOIgI4ilvEe0nwqWnCe0V9Cp4wDnoz2aQ==}
     engines: {node: ^22.14.0 || >=24.10.0}
     os: [darwin, linux, win32]
     hasBin: true
@@ -1495,6 +1495,10 @@ packages:
     resolution: {integrity: sha512-2hCgjEmP8YLWQ130n2FerGv7rYpfBmnmp9Uy2Le1vge6X3gZIfSmEzP5QTDElFxcvVcXlEn8Aq6MU/PZygIOog==}
     engines: {node: '>=14.16'}
 
+  brace-expansion@5.0.12:
+    resolution: {integrity: sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ==}
+    engines: {node: 20 || >=22}
+
   brace-expansion@5.0.9:
     resolution: {integrity: sha512-ScQ4IuvIEF1TMlP7Zt+vjJ//9zlPb2SDcxWxM3bk8s6t6GGdJ7KO1dCcTidOPJKePW30LE/2cT7wCyPho9/Wxg==}
     engines: {node: 20 || >=22}
@@ -1805,8 +1809,8 @@ packages:
       cosmiconfig: '>=9'
       typescript: '>=5'
 
-  cosmiconfig@10.0.0:
-    resolution: {integrity: sha512-RYs2EfrIoS16yh6j/MLgF753u5rROFFw3XGjcJXM4UQJm1iGXX7gKNyk4O/bCkyfi9Qfo+fVdd3FrnviZv830g==}
+  cosmiconfig@10.0.1:
+    resolution: {integrity: sha512-/zvGoYn0y27QTBmK+0B+oPdEPC4fKGUmJsMTQbDjqph00TrkqfVFW/M+C6ya54sYCgHC6QCwK/mI6djt8cEGHQ==}
     engines: {node: ^22.18 || >= 24}
 
   cosmiconfig@9.0.2:
@@ -3046,6 +3050,10 @@ packages:
     resolution: {integrity: sha512-28R/k+NAjeuf7+CKlTxWZVExJGwVVLwY06DgEnOMz2gEpfNkDcD7QvyiVPT0xy0XXhU8vHsd4Ot42OOPdJG7dQ==}
     hasBin: true
 
+  js-yaml@5.4.2:
+    resolution: {integrity: sha512-m+aqu+LwO1O6sIopafj8HUVl5aawITwZQe/yHpMCKjaWBaA/d07B/QdMb3529REftiU+RMMHL3Vlsw3hON7vWg==}
+    hasBin: true
+
   jsesc@3.1.0:
     resolution: {integrity: sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==}
     engines: {node: '>=6'}
@@ -3205,8 +3213,8 @@ packages:
     resolution: {integrity: sha512-wM1+Z03eypVAVUCE7QdSqpVIvelbOakn1M0bPDoA4SGWPx3sNDVUiMo3L6To6WWGClB7VyXnhQ4Sn7gxiJbE6A==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  lint-staged@17.5.0:
-    resolution: {integrity: sha512-ah2qsNtvKP1+Ak4rAvEEIvcXDLjjbr/xmxCvlequxqEOFYk0qINcZcRxD3Ic8wRn7/oQ8+wC9s0DfDrdMVCRFg==}
+  lint-staged@17.5.1:
+    resolution: {integrity: sha512-7EDuco1xnBMeVpvAbeMq1U5KXwJGLmY8q6l+Ye78r36C4mPc+Vg1Z2SK8gHyRTyvPro90A0q5/FAZ+Au23d6QQ==}
     engines: {node: '>=22.22.1'}
     hasBin: true
 
@@ -5294,7 +5302,7 @@ packages:
       sugarss: ^5.0.0
       terser: ^5.16.0
       tsx: ^4.8.1
-      yaml: ^2.9.0
+      yaml: ^2.9.1
     peerDependenciesMeta:
       '@types/node':
         optional: true
@@ -5479,6 +5487,11 @@ packages:
     engines: {node: '>= 14.6'}
     hasBin: true
 
+  yaml@2.9.1:
+    resolution: {integrity: sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
   yargs-parser@20.2.9:
     resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
     engines: {node: '>=10'}
@@ -5546,7 +5559,7 @@ snapshots:
 
   '@actions/io@3.0.2': {}
 
-  '@anolilab/commitlint-config@10.1.2(@commitlint/cli@21.2.2(@types/node@25.9.5)(conventional-commits-parser@7.1.2)(typescript@7.0.2))(@types/node@25.9.5)(conventional-commits-parser@7.1.2)(typescript@7.0.2)':
+  '@anolilab/commitlint-config@10.1.3(@commitlint/cli@21.2.2(@types/node@25.9.5)(conventional-commits-parser@7.1.2)(typescript@7.0.2))(@types/node@25.9.5)(conventional-commits-parser@7.1.2)(typescript@7.0.2)':
     dependencies:
       '@commitlint/cli': 21.2.2(@types/node@25.9.5)(conventional-commits-parser@7.1.2)(typescript@7.0.2)
       '@commitlint/config-conventional': 21.2.2
@@ -5560,7 +5573,7 @@ snapshots:
       - conventional-commits-parser
       - typescript
 
-  '@anolilab/lint-staged-config@11.1.3(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.5.0)(prettier@3.9.6)(secretlint@13.0.5(supports-color@7.2.0))(vitest@4.1.11(@types/node@25.9.5)(vite@8.2.2(@types/node@25.9.5)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)':
+  '@anolilab/lint-staged-config@11.1.3(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.5.1)(prettier@3.9.6)(secretlint@13.0.5(supports-color@7.2.0))(vitest@4.1.11(@types/node@25.9.5)(vite@8.2.2(@types/node@25.9.5)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)':
     dependencies:
       '@visulima/fs': 5.0.5(json5@2.2.3)(jsonc-parser@3.3.1)(yaml@2.9.0)
       '@visulima/package': 5.0.20(jsonc-parser@3.3.1)
@@ -5568,7 +5581,7 @@ snapshots:
       shell-quote: 1.10.0
       type-fest: 5.8.0
     optionalDependencies:
-      lint-staged: 17.5.0
+      lint-staged: 17.5.1
       prettier: 3.9.6
       secretlint: 13.0.5(supports-color@7.2.0)
       vitest: 4.1.11(@types/node@25.9.5)(vite@8.2.2(@types/node@25.9.5)(jiti@2.7.0)(yaml@2.9.0))
@@ -5580,15 +5593,14 @@ snapshots:
       - smol-toml
       - yaml
 
-  '@anolilab/multi-semantic-release@4.4.9(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)':
+  '@anolilab/multi-semantic-release@4.4.16(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)':
     dependencies:
       '@semrel-extra/topo': 1.14.1
       '@visulima/fs': 5.1.0(json5@2.2.3)(jsonc-parser@3.3.1)(yaml@2.9.0)
       '@visulima/path': 3.1.0
-      cosmiconfig: 10.0.0
+      cosmiconfig: 10.0.1
       debug: 4.4.3(supports-color@7.2.0)
       detect-indent: 7.0.2
-      detect-newline: 4.0.1
       execa: 10.0.1
       git-log-parser: 1.2.1
       lodash-es: 4.18.1
@@ -6331,7 +6343,7 @@ snapshots:
   '@semrel-extra/topo@1.14.1':
     dependencies:
       fast-glob: 3.3.3
-      js-yaml: 5.4.1
+      js-yaml: 5.4.2
       toposource: 1.2.0
 
   '@simple-libs/child-process-utils@2.0.0':
@@ -6568,7 +6580,7 @@ snapshots:
       '@textlint/resolver': 15.8.0
       '@textlint/types': 15.8.0
       debug: 4.4.3(supports-color@7.2.0)
-      js-yaml: 5.4.1
+      js-yaml: 5.4.2
       lodash: 4.18.1
       pluralize: 2.0.0
       string-width: 4.2.3
@@ -7105,6 +7117,10 @@ snapshots:
       widest-line: 4.0.1
       wrap-ansi: 8.1.0
 
+  brace-expansion@5.0.12:
+    dependencies:
+      balanced-match: 4.0.3
+
   brace-expansion@5.0.9:
     dependencies:
       balanced-match: 4.0.3
@@ -7424,7 +7440,7 @@ snapshots:
       jiti: 2.6.1
       typescript: 7.0.2
 
-  cosmiconfig@10.0.0:
+  cosmiconfig@10.0.1:
     dependencies:
       env-paths: 2.2.1
       js-yaml: 5.4.1
@@ -7433,7 +7449,7 @@ snapshots:
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
-      js-yaml: 5.4.1
+      js-yaml: 5.4.2
       parse-json: 5.2.0
     optionalDependencies:
       typescript: 7.0.2
@@ -8781,6 +8797,10 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
+  js-yaml@5.4.2:
+    dependencies:
+      argparse: 2.0.1
+
   jsesc@3.1.0: {}
 
   json-buffer@3.0.1: {}
@@ -8900,7 +8920,7 @@ snapshots:
 
   lines-and-columns@2.0.4: {}
 
-  lint-staged@17.5.0:
+  lint-staged@17.5.1:
     dependencies:
       picomatch: 4.0.7
       string-argv: 0.3.2
@@ -9635,23 +9655,23 @@ snapshots:
 
   minimatch@10.2.5:
     dependencies:
-      brace-expansion: 5.0.9
+      brace-expansion: 5.0.12
 
   minimatch@10.2.6:
     dependencies:
-      brace-expansion: 5.0.9
+      brace-expansion: 5.0.12
 
   minimatch@3.1.5:
     dependencies:
-      brace-expansion: 5.0.9
+      brace-expansion: 5.0.12
 
   minimatch@5.1.9:
     dependencies:
-      brace-expansion: 5.0.9
+      brace-expansion: 5.0.12
 
   minimatch@9.0.9:
     dependencies:
-      brace-expansion: 5.0.9
+      brace-expansion: 5.0.12
 
   minimist-options@4.1.0:
     dependencies:
@@ -10339,7 +10359,7 @@ snapshots:
   rc-config-loader@4.1.4(supports-color@7.2.0):
     dependencies:
       debug: 4.4.3(supports-color@7.2.0)
-      js-yaml: 5.4.1
+      js-yaml: 5.4.2
       json5: 2.2.3
       require-from-string: 2.0.2
     transitivePeerDependencies:
@@ -11528,7 +11548,7 @@ snapshots:
       vfile-message: 3.1.4
       vfile-reporter: 7.0.5
       vfile-statistics: 2.0.1
-      yaml: 2.9.0
+      yaml: 2.9.1
     transitivePeerDependencies:
       - supports-color
 
@@ -11941,6 +11961,8 @@ snapshots:
   yallist@4.0.0: {}
 
   yaml@2.9.0: {}
+
+  yaml@2.9.1: {}
 
   yargs-parser@20.2.9: {}
 
