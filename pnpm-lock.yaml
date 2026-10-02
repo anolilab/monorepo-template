@@ -11,13 +11,13 @@ overrides:
   form-data@>=4.0.0 <4.0.6: '>=4.0.6'
   lodash@<=4.17.23: ^4.17.24
   micromatch@<4.0.8: '>=4.0.8'
-  shell-quote@>=1.1.0 <=1.8.3: ^1.10.0
+  shell-quote@>=1.1.0 <=1.8.3: ^1.11.0
   tmp@<0.2.6: ^0.2.7
   tmp@<=0.2.3: '>=0.2.7'
   tmp@>=0.2.6 <0.2.7: '>=0.2.7'
-  undici@<6.27.0: '>=8.10.2'
-  undici@>=7.0.0 <7.28.0: '>=8.10.2'
-  '@actions/http-client>undici': '>=8.10.2'
+  undici@<6.27.0: '>=8.11.2'
+  undici@>=7.0.0 <7.28.0: '>=8.11.2'
+  '@actions/http-client>undici': '>=8.11.2'
   yaml@>=2.0.0 <2.8.3: ^2.9.0
   brace-expansion@<1.1.17: '>=5.0.9'
   brace-expansion@>=2.0.0 <2.1.2: '>=5.0.9'
@@ -39,7 +39,7 @@ importers:
         version: 10.1.2(@commitlint/cli@21.2.2(@types/node@25.9.5)(conventional-commits-parser@7.1.2)(typescript@7.0.2))(@types/node@25.9.5)(conventional-commits-parser@7.1.2)(typescript@7.0.2)
       '@anolilab/lint-staged-config':
         specifier: ^11.1.3
-        version: 11.1.3(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.5.0)(prettier@3.9.6)(secretlint@13.0.5(supports-color@7.2.0))(vitest@4.1.11(@types/node@25.9.5)(vite@8.2.2(@types/node@25.9.5)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)
+        version: 11.1.3(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.6.0)(prettier@3.9.6)(secretlint@13.0.5(supports-color@7.2.0))(vitest@4.1.11(@types/node@25.9.5)(vite@8.2.2(@types/node@25.9.5)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)
       '@anolilab/multi-semantic-release':
         specifier: ^4.4.9
         version: 4.4.9(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)
@@ -83,8 +83,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
       lint-staged:
-        specifier: ^17.4.1
-        version: 17.5.0
+        specifier: ^17.6.0
+        version: 17.6.0
       nx:
         specifier: ^23.2.0
         version: 23.2.0
@@ -3205,8 +3205,8 @@ packages:
     resolution: {integrity: sha512-wM1+Z03eypVAVUCE7QdSqpVIvelbOakn1M0bPDoA4SGWPx3sNDVUiMo3L6To6WWGClB7VyXnhQ4Sn7gxiJbE6A==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  lint-staged@17.5.0:
-    resolution: {integrity: sha512-ah2qsNtvKP1+Ak4rAvEEIvcXDLjjbr/xmxCvlequxqEOFYk0qINcZcRxD3Ic8wRn7/oQ8+wC9s0DfDrdMVCRFg==}
+  lint-staged@17.6.0:
+    resolution: {integrity: sha512-nOhBfYkZEwkFtNzD5pK9s9LkcWoxJ+whLzEnhqi9nl7zTB5n7tg8+9iYgMGx2Wm3VlLu8cbNj0RACzY+nWi5iQ==}
     engines: {node: '>=22.22.1'}
     hasBin: true
 
@@ -5096,8 +5096,8 @@ packages:
   undici-types@7.24.6:
     resolution: {integrity: sha512-WRNW+sJgj5OBN4/0JpHFqtqzhpbnV0GuB+OozA9gCL7a993SmU+1JBZCzLNxYsbMfIeDL+lTsphD5jN5N+n0zg==}
 
-  undici@8.10.2:
-    resolution: {integrity: sha512-/y4/bH9YNU5hi9NIrpOuvGXFcxrj3CMrV+/AYpowAYTpHn8gX/XPFjNy766FPoYY0miQhdW977JFWKGNhBdwyQ==}
+  undici@8.11.2:
+    resolution: {integrity: sha512-u4UB2/IrKdU6lFxumHmmo1a3fCQO5tzQllRorfoRS63txhrB7xTpSn1PftwC4qEHkOaqP95fCWW4lJzwErwzhQ==}
     engines: {node: '>=22.19.0'}
 
   unherit@3.0.1:
@@ -5479,6 +5479,11 @@ packages:
     engines: {node: '>= 14.6'}
     hasBin: true
 
+  yaml@2.9.1:
+    resolution: {integrity: sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
   yargs-parser@20.2.9:
     resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
     engines: {node: '>=10'}
@@ -5542,7 +5547,7 @@ snapshots:
   '@actions/http-client@4.0.1':
     dependencies:
       tunnel: 0.0.6
-      undici: 8.10.2
+      undici: 8.11.2
 
   '@actions/io@3.0.2': {}
 
@@ -5560,7 +5565,7 @@ snapshots:
       - conventional-commits-parser
       - typescript
 
-  '@anolilab/lint-staged-config@11.1.3(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.5.0)(prettier@3.9.6)(secretlint@13.0.5(supports-color@7.2.0))(vitest@4.1.11(@types/node@25.9.5)(vite@8.2.2(@types/node@25.9.5)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)':
+  '@anolilab/lint-staged-config@11.1.3(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.6.0)(prettier@3.9.6)(secretlint@13.0.5(supports-color@7.2.0))(vitest@4.1.11(@types/node@25.9.5)(vite@8.2.2(@types/node@25.9.5)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)':
     dependencies:
       '@visulima/fs': 5.0.5(json5@2.2.3)(jsonc-parser@3.3.1)(yaml@2.9.0)
       '@visulima/package': 5.0.20(jsonc-parser@3.3.1)
@@ -5568,7 +5573,7 @@ snapshots:
       shell-quote: 1.10.0
       type-fest: 5.8.0
     optionalDependencies:
-      lint-staged: 17.5.0
+      lint-staged: 17.6.0
       prettier: 3.9.6
       secretlint: 13.0.5(supports-color@7.2.0)
       vitest: 4.1.11(@types/node@25.9.5)(vite@8.2.2(@types/node@25.9.5)(jiti@2.7.0)(yaml@2.9.0))
@@ -6289,7 +6294,7 @@ snapshots:
       p-filter: 4.1.0
       semantic-release: 25.0.9(supports-color@7.2.0)(typescript@7.0.2)
       tinyglobby: 0.2.17
-      undici: 8.10.2
+      undici: 8.11.2
       url-join: 5.0.0
     transitivePeerDependencies:
       - kerberos
@@ -8900,13 +8905,13 @@ snapshots:
 
   lines-and-columns@2.0.4: {}
 
-  lint-staged@17.5.0:
+  lint-staged@17.6.0:
     dependencies:
       picomatch: 4.0.7
       string-argv: 0.3.2
       tinyexec: 1.3.1
     optionalDependencies:
-      yaml: 2.9.0
+      yaml: 2.9.1
 
   load-json-file@4.0.0:
     dependencies:
@@ -11486,7 +11491,7 @@ snapshots:
 
   undici-types@7.24.6: {}
 
-  undici@8.10.2: {}
+  undici@8.11.2: {}
 
   unherit@3.0.1: {}
 
@@ -11941,6 +11946,9 @@ snapshots:
   yallist@4.0.0: {}
 
   yaml@2.9.0: {}
+
+  yaml@2.9.1:
+    optional: true
 
   yargs-parser@20.2.9: {}
 
