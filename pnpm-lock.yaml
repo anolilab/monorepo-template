@@ -218,7 +218,7 @@ importers:
         version: 21.2.3
       '@secretlint/secretlint-rule-preset-recommend':
         specifier: ^13.0.5
-        version: 13.0.6
+        version: 13.0.7
       '@types/node':
         specifier: 25.9.8
         version: 25.9.8
@@ -603,12 +603,12 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@modelcontextprotocol/core@2.2.0':
-    resolution: {integrity: sha512-iLhmprRmWI8EcosOA3wVvww22z02NkgqhV4fBH6f/odQBsi7xnJc0HGmi21yWO+/iKw2yzqVE127Zhna5/+JXw==}
+  '@modelcontextprotocol/core@2.3.0':
+    resolution: {integrity: sha512-09BHFaNVBe5pB2AhzCfLj0cqmsKLERvZQ4FblzP90UMGLaXVqdZPByFjURwsUYCmxonUW2yAwgTTvle+8O2/8w==}
     engines: {node: '>=20'}
 
-  '@modelcontextprotocol/server@2.2.0':
-    resolution: {integrity: sha512-qFnltjus6Gk8Lx6J1w2RXmr3YPN22MNT6qD6zjAkaiWIlFIFxWClz0rXHNuJF/KSUyn5YGhkSvXkWDbQHVLFEQ==}
+  '@modelcontextprotocol/server@2.3.0':
+    resolution: {integrity: sha512-+6b0LdsQLmHsvS7J6sQJ4weTpzUn61fU1JKS+321/+IyDYoHW5CR2Tgqcs6GgAAQvlesCo6yX3xttgmx+XGtJw==}
     engines: {node: '>=20'}
 
   '@napi-rs/wasm-runtime@0.2.4':
@@ -900,8 +900,8 @@ packages:
   '@secretlint/resolver@13.0.5':
     resolution: {integrity: sha512-6V3PfSKJTafCMLbPMVZkP1d43Ot9y4hB8tmtA10NEybnV2gqgO8hMrWe2SsZUPBugjUPTise7efs9BFPsO9M6A==}
 
-  '@secretlint/secretlint-rule-preset-recommend@13.0.6':
-    resolution: {integrity: sha512-5OdYoPKs7LznSY/mFgpJlSY8ayF+clq0gdfOE0ERVfvUifmIDz0yG/d1ij3wZmfpyOw33tk12zUcDZqrXHFodA==}
+  '@secretlint/secretlint-rule-preset-recommend@13.0.7':
+    resolution: {integrity: sha512-hfdYra+ZB6RmviEApxeL/YCx4ovBtpj0d9c+uhlCZaCikObjb8Sb8yqBN6g8/9tt7qD7LXGE3k9RtVvGK1fNVw==}
     engines: {node: '>=22.0.0'}
 
   '@secretlint/source-creator@13.0.5':
@@ -1384,8 +1384,8 @@ packages:
       yaml:
         optional: true
 
-  '@visulima/fs@6.0.21':
-    resolution: {integrity: sha512-wsuHCfe7xYV/WNBR5BzBtuI5NPTxyqD4RkHeswyuyvejxv5CwrAJ1g7PuRAcGyptocl6NfWzbVMyjXLTWvz31A==}
+  '@visulima/fs@6.0.25':
+    resolution: {integrity: sha512-eEI37rFX/M+d4UUfNwB1i8Ip732IY2ax9ifwrF2xVUNbR63N/rYIXXN6zd2HMKJNp1PHGrh31Hz688mBsKzPAQ==}
     engines: {node: ^22.14.0 || >=24.10.0}
     os: [darwin, linux, win32]
     peerDependencies:
@@ -1406,8 +1406,8 @@ packages:
       smol-toml:
         optional: true
 
-  '@visulima/package@5.0.34':
-    resolution: {integrity: sha512-IU2EJ0uOqc+HdmpPbRI75atCQdFqHEqrkUKaF9mfgRiu6TpAPoSJnwli5DuDgpUxyH1WZutkKkGFwMAkXJ83zQ==}
+  '@visulima/package@5.0.38':
+    resolution: {integrity: sha512-XZWW8JtsPXzPniOSQSN22s7tYo+jDTVktP8rwwpaGhbTBheUyPmFDZSJneONz5iW18O1gqcZZ8TIm4xwbCnrXA==}
     engines: {node: ^22.14.0 || >=24.10.0}
     os: [darwin, linux, win32]
 
@@ -1774,8 +1774,8 @@ packages:
   charenc@0.0.2:
     resolution: {integrity: sha512-yrLQ/yVUFXkzg7EDQsPieE/53+0RlaWTs+wBrvW36cyilJ2SaDWfl4Yj7MtLTXleV9uEKefbAGUPv2/iWSooRA==}
 
-  chrono-node@2.10.1:
-    resolution: {integrity: sha512-tPOsBzYVAK5zth+CiHCgp5NGeqRc4mMD8FPthQ5IxkgjPWWxIFdM5odnmfw//IRAzl6C++Xy8olQW7wn5qBR1g==}
+  chrono-node@2.10.2:
+    resolution: {integrity: sha512-xBCwGGmodF2YVtzE7/8ewNDajbCg72jgZHyOXvhkuQiYhIQ1KbqyXJJJw2fLaQ603LL4oMVhOyjckEBve45S4w==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   ci-info@3.9.0:
@@ -2785,8 +2785,8 @@ packages:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
 
-  ignore@7.0.11:
-    resolution: {integrity: sha512-YChdK5txDjwGUvgR7oCJcLGkwi3LDh8Zx8tS7ndYciLEg/oOCL26VUBSUEtgS7EjiybcBqFxh5j0rAdDX7/bbg==}
+  ignore@7.0.12:
+    resolution: {integrity: sha512-/8UvqAPU9DGTI9k4mxtf49U37Isfwr8Uts96+SBHIkFxPJnHS0Ew4f00sM4Scd8V8EjM0jUNtVDdv1kPdt35lg==}
     engines: {node: '>= 4'}
 
   ignore@7.0.5:
@@ -4696,8 +4696,8 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  shell-quote@1.11.0:
-    resolution: {integrity: sha512-JdxDPD0DBTyu08pq0kPC0xSNet/qsU07qT6IsX1AS8oO2ICNRY4ldNa8OAI6PuwAH8tG3lxEhbqmyp4Dw4036g==}
+  shell-quote@1.12.0:
+    resolution: {integrity: sha512-PcByqNyT/38F2kDNi006HAMRJaULuBzq/FOsw3qdZvX/GA9W/jamDaRskgHjubHiftXK5sIFxLNkvrXUwcof6Q==}
     engines: {node: '>= 0.4'}
 
   side-channel-list@1.0.1:
@@ -5714,9 +5714,9 @@ snapshots:
   '@anolilab/lint-staged-config@12.0.1(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.6.0)(prettier@3.9.9)(secretlint@13.0.5(supports-color@7.2.0))(vitest@5.0.3(@types/node@25.9.8)(vite@8.3.2(@types/node@25.9.8)(jiti@2.7.0)(yaml@2.9.0)))(yaml@2.9.0)':
     dependencies:
       '@visulima/fs': 5.0.5(json5@2.2.3)(jsonc-parser@3.3.1)(yaml@2.9.0)
-      '@visulima/package': 5.0.34(jsonc-parser@3.3.1)
+      '@visulima/package': 5.0.38(jsonc-parser@3.3.1)
       husky: 9.1.7
-      shell-quote: 1.11.0
+      shell-quote: 1.12.0
       type-fest: 5.8.0
     optionalDependencies:
       lint-staged: 17.6.0
@@ -6116,13 +6116,13 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@modelcontextprotocol/core@2.2.0':
+  '@modelcontextprotocol/core@2.3.0':
     dependencies:
       zod: 4.6.5
 
-  '@modelcontextprotocol/server@2.2.0':
+  '@modelcontextprotocol/server@2.3.0':
     dependencies:
-      '@modelcontextprotocol/core': 2.2.0
+      '@modelcontextprotocol/core': 2.3.0
       zod: 4.6.5
 
   '@napi-rs/wasm-runtime@0.2.4':
@@ -6390,7 +6390,7 @@ snapshots:
 
   '@secretlint/resolver@13.0.5': {}
 
-  '@secretlint/secretlint-rule-preset-recommend@13.0.6': {}
+  '@secretlint/secretlint-rule-preset-recommend@13.0.7': {}
 
   '@secretlint/source-creator@13.0.5':
     dependencies:
@@ -6401,7 +6401,7 @@ snapshots:
 
   '@secretlint/walker@13.0.5':
     dependencies:
-      ignore: 7.0.11
+      ignore: 7.0.12
       picomatch: 4.0.7
 
   '@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.9(supports-color@7.2.0)(typescript@7.0.2))(supports-color@7.2.0)':
@@ -6984,17 +6984,17 @@ snapshots:
       jsonc-parser: 3.3.1
       yaml: 2.9.0
 
-  '@visulima/fs@6.0.21(json5@2.2.3)(jsonc-parser@3.3.1)':
+  '@visulima/fs@6.0.25(json5@2.2.3)(jsonc-parser@3.3.1)':
     dependencies:
       '@visulima/path': 4.0.0
     optionalDependencies:
       json5: 2.2.3
       jsonc-parser: 3.3.1
 
-  '@visulima/package@5.0.34(jsonc-parser@3.3.1)':
+  '@visulima/package@5.0.38(jsonc-parser@3.3.1)':
     dependencies:
       '@antfu/install-pkg': 2.1.0
-      '@visulima/fs': 6.0.21(json5@2.2.3)(jsonc-parser@3.3.1)
+      '@visulima/fs': 6.0.25(json5@2.2.3)(jsonc-parser@3.3.1)
       '@visulima/path': 4.0.0
       json5: 2.2.3
       normalize-package-data: 9.0.0
@@ -7357,7 +7357,7 @@ snapshots:
 
   charenc@0.0.2: {}
 
-  chrono-node@2.10.1: {}
+  chrono-node@2.10.2: {}
 
   ci-info@3.9.0: {}
 
@@ -8528,7 +8528,7 @@ snapshots:
 
   ignore@5.3.2: {}
 
-  ignore@7.0.11: {}
+  ignore@7.0.12: {}
 
   ignore@7.0.5: {}
 
@@ -10942,7 +10942,7 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  shell-quote@1.11.0: {}
+  shell-quote@1.12.0: {}
 
   side-channel-list@1.0.1:
     dependencies:
@@ -11281,7 +11281,7 @@ snapshots:
 
   textlint-rule-date-weekday-mismatch@1.1.1(supports-color@7.2.0):
     dependencies:
-      chrono-node: 2.10.1
+      chrono-node: 2.10.2
       moment: 2.31.0
       textlint-tester: 12.6.1(supports-color@7.2.0)
     transitivePeerDependencies:
@@ -11360,7 +11360,7 @@ snapshots:
 
   textlint@15.8.0(supports-color@7.2.0):
     dependencies:
-      '@modelcontextprotocol/server': 2.2.0
+      '@modelcontextprotocol/server': 2.3.0
       '@textlint/ast-node-types': 15.8.0
       '@textlint/ast-traverse': 15.8.0
       '@textlint/config-loader': 15.8.0(supports-color@7.2.0)
