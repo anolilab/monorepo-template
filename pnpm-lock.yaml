@@ -247,7 +247,7 @@ importers:
         specifier: ^17.6.0
         version: 17.6.0
       nx:
-        specifier: ^23.2.0
+        specifier: ^23.2.1
         version: 23.2.1
       plop:
         specifier: ^4.0.5
