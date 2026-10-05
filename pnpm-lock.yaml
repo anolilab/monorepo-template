@@ -253,7 +253,7 @@ importers:
         specifier: ^4.0.5
         version: 4.0.5(@types/node@25.9.8)
       prettier:
-        specifier: ^3.9.6
+        specifier: ^3.9.9
         version: 3.9.9
       publint:
         specifier: ^0.3.24
