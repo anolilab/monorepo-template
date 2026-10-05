@@ -15,14 +15,26 @@ minimumReleaseAgeExclude:
   - lodash@4.17.24
   - brace-expansion@5.0.6
   - shell-quote@1.8.4
+auditConfig:
+  ignoreGhsas:
+    # GHSA-vfj7-8cjw-p6xm (braces stack exhaustion) has no fix: the advisory covers <=3.0.3
+    # and 3.0.3 is the latest published version, so the override below cannot resolve it.
+    # Reached only through dev-only micromatch, whose patterns come from our own config.
+    - GHSA-vfj7-8cjw-p6xm
+
 overrides:
   brace-expansion@>=5.0.0 <5.0.6: ^5.0.12
-  braces@<3.0.3: ">=3.0.3"
+  # 5.0.9 through 5.0.11 are still affected by GHSA-6j4f-fj2g-mc7p, GHSA-qhr7-859c-m2p7
+  # and GHSA-q2hr-2g5m-vwhr.
+  brace-expansion@<5.0.12: ^5.0.12
   chrono-node@<2.2.4: ^2.10.1
+  http-cache-semantics@<=4.2.0: ^4.3.0
   form-data@>=4.0.0 <4.0.6: ">=4.0.6"
+  axios@<1.20.0: ^1.20.0
   lodash@<=4.17.23: ^4.17.24
   micromatch@<4.0.8: ">=4.0.8"
   shell-quote@>=1.1.0 <=1.8.3: ^1.11.0
+  smol-toml@<1.7.1: ^1.7.1
   tmp@<0.2.6: ^0.2.7
   tmp@<=0.2.3: ">=0.2.7"
   tmp@>=0.2.6 <0.2.7: ">=0.2.7"
