@@ -18,7 +18,7 @@ permissions:
 
 jobs:
     allo-allo:
-        uses: "anolilab/workflows/.github/workflows/allo-allo.yml@7aeab1cad9757c56df7e99a180b158a2e895984f" # v22.0.2
+        uses: "anolilab/workflows/.github/workflows/allo-allo.yml@d403f72a96c4b04c3d93ff1199c0787d544cd000" # v22.0.6
         with:
             target-repo: "{{ ORGANIZATIONS }}/{{ REPOSITORY_NAME }}"
             issue-welcome: >
