@@ -96,7 +96,7 @@ jobs:
 
             - name: "Setup resources and environment"
               id: "setup"
-              uses: "anolilab/workflows/step/setup@7aeab1cad9757c56df7e99a180b158a2e895984f" # v22.0.2
+              uses: "anolilab/workflows/step/setup@382cb6ceef0cc355d67ce923e0173ac7d4a9d135" # v24.0.8
               with:
                   node-version: "${{ matrix.node_version }}"
 
@@ -128,11 +128,11 @@ jobs:
 
             - name: "Prepare nx cache"
               shell: "bash"
-              run: "tar -cf - .nx/cache | lz4 > /tmp/nx_cache.tar.lz4" # compress nx cache
+              run: "if [ -d .nx/cache ]; then tar -cf - .nx/cache | lz4 > /tmp/nx_cache.tar.lz4; else echo 'No nx cache to package.'; fi" # compress nx cache
 
             - name: "Upload code coverage to codecov"
               if: "matrix.os == 'ubuntu-latest' && matrix.node_version == 24"
-              uses: "anolilab/workflows/step/codecov@7aeab1cad9757c56df7e99a180b158a2e895984f" # v22.0.2
+              uses: "anolilab/workflows/step/codecov@382cb6ceef0cc355d67ce923e0173ac7d4a9d135" # v24.0.8
               with:
                   run-lint: "needs.files-changed.outputs.codecov == 'true'"
                   codecov-token: "${{ secrets.CODECOV_TOKEN }}"

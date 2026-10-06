@@ -27,28 +27,28 @@ overrides:
   # 5.0.9 through 5.0.11 are still affected by GHSA-6j4f-fj2g-mc7p, GHSA-qhr7-859c-m2p7
   # and GHSA-q2hr-2g5m-vwhr.
   brace-expansion@<5.0.12: ^5.0.12
-  chrono-node@<2.2.4: ^2.10.1
+  chrono-node@<2.2.4: ^2.10.2
   http-cache-semantics@<=4.2.0: ^4.3.0
   form-data@>=4.0.0 <4.0.6: ">=4.0.6"
   axios@<1.20.0: ^1.20.0
   lodash@<=4.17.23: ^4.17.24
   micromatch@<4.0.8: ">=4.0.8"
   shell-quote@>=1.1.0 <=1.8.3: ^1.11.0
-  smol-toml@<1.7.1: ^1.7.1
+  smol-toml@<1.7.1: ^1.7.2
   tmp@<0.2.6: ^0.2.7
   tmp@<=0.2.3: ">=0.2.7"
   tmp@>=0.2.6 <0.2.7: ">=0.2.7"
   undici@<6.27.0: ">=8.11.2"
   undici@>=7.0.0 <7.28.0: ">=8.11.2"
   "@actions/http-client>undici": ">=8.11.2"
-  yaml@>=2.0.0 <2.8.3: ^2.9.0
-  brace-expansion@<1.1.17: ">=5.0.9"
-  brace-expansion@>=2.0.0 <2.1.2: ">=5.0.9"
-  brace-expansion@>=4.0.0 <5.0.9: ">=5.0.9"
-  js-yaml@>=4.0.0 <4.3.1: "^5.4.1"
+  yaml@>=2.0.0 <2.8.3: ^2.9.1
+  brace-expansion@<1.1.17: ">=5.0.12"
+  brace-expansion@>=2.0.0 <2.1.2: ">=5.0.12"
+  brace-expansion@>=4.0.0 <5.0.9: ">=5.0.12"
+  js-yaml@>=4.0.0 <4.3.1: "^5.4.2"
   fast-uri@>=3.0.0 <3.1.5: ">=3.1.5 <5"
   postcss@<=8.5.22: ">=8.5.23 <9"
-  ip-address@<=10.3.0: ">=10.7.2"
+  ip-address@<=10.3.0: ">=10.7.3"
   nanoid@<3.3.17: ">=6.0.1"
   hono@>=4.0.0 <4.12.34: ">=4.12.34 <5"
   "@hono/node-server@<2.0.5": ">=2.1.3"
