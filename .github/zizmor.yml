@@ -16,6 +16,11 @@ rules:
             - "cache-clear.yml"
             - "stale-issues.yml"
 
+    ref-version-mismatch:
+        # Pinned to an untagged anolilab/workflows commit; the "# main" comment cannot name a release.
+        ignore:
+            - "zizmor.yml"
+
     unpinned-uses:
         # Workflows with intentionally unpinned action references (typically
         # org-internal callers or upstream-managed templates).
