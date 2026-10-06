@@ -171,8 +171,8 @@ overrides:
   axios@<1.20.0: ^1.20.0
   lodash@<=4.17.23: ^4.17.24
   micromatch@<4.0.8: '>=4.0.8'
-  shell-quote@>=1.1.0 <=1.8.3: ^1.11.0
-  smol-toml@<1.7.1: ^1.7.2
+  shell-quote@>=1.1.0 <=1.8.3: ^1.12.0
+  smol-toml@<1.7.1: ^1.9.0
   tmp@<0.2.6: ^0.2.7
   tmp@<=0.2.3: '>=0.2.7'
   tmp@>=0.2.6 <0.2.7: '>=0.2.7'
@@ -1351,7 +1351,7 @@ packages:
       ini: ^7.0.0
       json5: ^2.2.3
       jsonc-parser: ^3.3.1
-      smol-toml: ^1.7.2
+      smol-toml: ^1.9.0
       yaml: '>=2.9.0'
     peerDependenciesMeta:
       ini:
@@ -1373,7 +1373,7 @@ packages:
       ini: ^7.0.0
       json5: ^2.2.3
       jsonc-parser: ^3.3.1
-      smol-toml: ^1.7.2
+      smol-toml: ^1.9.0
       yaml: '>=2.9.0'
     peerDependenciesMeta:
       ini:
