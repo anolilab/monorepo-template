@@ -425,6 +425,11 @@ packages:
     engines: {node: ^22.18.0 || >=24.11.0}
     hasBin: true
 
+  '@babel/parser@8.0.7':
+    resolution: {integrity: sha512-UkDwEbPO1px2JQSrdh4qIgaH1JgG7GO/pFeJkpxhDxIETkT/QvGpnigXIw75ViHYPtIgKITmVUJqLjiO+JuWjA==}
+    engines: {node: ^22.18.0 || >=24.11.0}
+    hasBin: true
+
   '@babel/template@8.0.0':
     resolution: {integrity: sha512-eAD0QW/AlbamBbw0FeGiwasbCVPq5ncW0HNVyLP3B9czqLyh4gvw+5JTSNt6le9+ziAU7mqDZsKTHf3jTb4chQ==}
     engines: {node: ^22.18.0 || >=24.11.0}
@@ -5809,6 +5814,10 @@ snapshots:
   '@babel/helpers@8.0.7':
     dependencies:
       '@babel/template': 8.0.0
+      '@babel/types': 8.0.6
+
+  '@babel/parser@8.0.7':
+    dependencies:
       '@babel/types': 8.0.6
 
   '@babel/parser@8.0.7':
