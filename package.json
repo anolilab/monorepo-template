@@ -35,7 +35,7 @@
         "lint:text": "textlint ./.github/ ./packages/** ./README.md ./UPGRADE.md --experimental --cache --dry-run",
         "lint:text:fix": "textlint ./.github/ ./packages/** ./README.md ./UPGRADE.md --experimental --fix",
         "lint:types": "nx run-many --target=lint:types --all --parallel",
-        "nx": "nx",
+        "nx": "^23.3.0",
         "plop": "plop",
         "prepare": "is-ci || husky install || exit 0",
         "sort-package-json": "sort-package-json packages/**/package.json apps/**/package.json ./package.json",
