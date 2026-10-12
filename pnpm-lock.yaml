@@ -172,7 +172,7 @@ overrides:
   lodash@<=4.17.23: ^4.17.24
   micromatch@<4.0.8: '>=4.0.8'
   shell-quote@>=1.1.0 <=1.8.3: ^1.12.0
-  smol-toml@<1.7.1: ^1.9.0
+  smol-toml@<1.7.1: ^1.9.1
   tmp@<0.2.6: ^0.2.7
   tmp@<=0.2.3: '>=0.2.7'
   tmp@>=0.2.6 <0.2.7: '>=0.2.7'
@@ -183,27 +183,27 @@ overrides:
   brace-expansion@<1.1.17: '>=5.0.12'
   brace-expansion@>=2.0.0 <2.1.2: '>=5.0.12'
   brace-expansion@>=4.0.0 <5.0.9: '>=5.0.12'
-  js-yaml@>=4.0.0 <4.3.1: ^5.4.2
+  js-yaml@>=4.0.0 <4.3.1: ^5.4.3
   fast-uri@>=3.0.0 <3.1.5: '>=3.1.5 <5'
   postcss@<=8.5.22: '>=8.5.23 <9'
   ip-address@<=10.3.0: '>=10.7.3'
-  nanoid@<3.3.17: '>=6.0.1'
+  nanoid@<3.3.17: '>=6.0.2'
   hono@>=4.0.0 <4.12.34: '>=4.12.34 <5'
-  '@hono/node-server@<2.0.5': '>=2.1.3'
+  '@hono/node-server@<2.0.5': '>=2.1.4'
 
 importers:
 
   .:
     dependencies:
       '@anolilab/commitlint-config':
-        specifier: ^10.1.3
-        version: 10.1.3(@commitlint/cli@21.2.3(@types/node@25.9.8)(conventional-commits-parser@7.1.2)(typescript@7.0.2))(@types/node@25.9.8)(conventional-commits-parser@7.1.2)(typescript@7.0.2)
+        specifier: ^10.1.5
+        version: 10.1.5(@commitlint/cli@21.2.3(@types/node@25.9.8)(conventional-commits-parser@7.1.2)(typescript@7.0.2))(@types/node@25.9.8)(conventional-commits-parser@7.1.2)(typescript@7.0.2)
       '@anolilab/lint-staged-config':
-        specifier: ^12.0.1
-        version: 12.0.1(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.6.0)(prettier@3.9.9)(secretlint@13.0.7(supports-color@7.2.0))(smol-toml@1.9.0)(vitest@5.0.3(@types/node@25.9.8)(vite@8.3.2(@types/node@25.9.8)(jiti@2.7.0)(yaml@2.9.1)))(yaml@2.9.1)
+        specifier: ^12.0.3
+        version: 12.0.3(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.6.0)(prettier@3.9.9)(secretlint@13.0.7(supports-color@7.2.0))(smol-toml@1.9.1)(vitest@5.0.3(@types/node@25.9.8)(vite@8.3.2(@types/node@25.9.8)(jiti@2.7.0)(yaml@2.9.1)))(yaml@2.9.1)
       '@anolilab/multi-semantic-release':
         specifier: ^4.4.23
-        version: 4.4.23(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@7.2.0)(typescript@7.0.2))(smol-toml@1.9.0)(supports-color@7.2.0)
+        version: 4.4.23(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@7.2.0)(typescript@7.0.2))(smol-toml@1.9.1)(supports-color@7.2.0)
       '@anolilab/prettier-config':
         specifier: ^10.0.3
         version: 10.0.3(prettier@3.9.9)
@@ -297,15 +297,15 @@ packages:
   '@actions/io@3.0.2':
     resolution: {integrity: sha512-nRBchcMM+QK1pdjO7/idu86rbJI5YHUKCvKs0KxnSYbVe3F51UfGxuZX4Qy/fWlp6l7gWFwIkrOzN+oUK03kfw==}
 
-  '@anolilab/commitlint-config@10.1.3':
-    resolution: {integrity: sha512-b6MSmjshoMmPAYvA1vsfmhOMM3gOjk+IyFGIoS3E7AexhThhRsDj7UeUiK5fBxHNu4A2phEznT2PpQIoUjcPjQ==}
+  '@anolilab/commitlint-config@10.1.5':
+    resolution: {integrity: sha512-+JAO24btV4iJCxPdUYViHKK59G7SCxnYQH4vBgrRf+kt7i6sesYJaoJGunxBd8eFO3n0tgiu3PKY5k68G0NK9A==}
     engines: {node: '>=22.12.0 <=25.*'}
     hasBin: true
     peerDependencies:
       '@commitlint/cli': ^17.6.5 || ^18.x || ^19.x || ^20.0.0 || ^21.0.0
 
-  '@anolilab/lint-staged-config@12.0.1':
-    resolution: {integrity: sha512-X4UX0IbKmRmnN8VUv8Qv00CPtqB/AnTrBEdrgsIAQCNuC8O4vCiE8vDkExvdr6VqNj8zKNwtsZMbScucTj/xyQ==}
+  '@anolilab/lint-staged-config@12.0.3':
+    resolution: {integrity: sha512-N58NSbGXobmnM2ZKhMOoyzx0CjktwscZMX0M3zqyjc7xdnMt4pVd+7wPiHcWc2Y0A2DY2NFl156NaNUfZgZrlg==}
     engines: {node: '>=22.12.0 <=25.*'}
     hasBin: true
     peerDependencies:
@@ -1351,7 +1351,7 @@ packages:
       ini: ^7.0.0
       json5: ^2.2.3
       jsonc-parser: ^3.3.1
-      smol-toml: ^1.9.0
+      smol-toml: ^1.9.1
       yaml: '>=2.9.0'
     peerDependenciesMeta:
       ini:
@@ -1373,7 +1373,7 @@ packages:
       ini: ^7.0.0
       json5: ^2.2.3
       jsonc-parser: ^3.3.1
-      smol-toml: ^1.9.0
+      smol-toml: ^1.9.1
       yaml: '>=2.9.0'
     peerDependenciesMeta:
       ini:
@@ -3189,6 +3189,10 @@ packages:
     resolution: {integrity: sha512-m+aqu+LwO1O6sIopafj8HUVl5aawITwZQe/yHpMCKjaWBaA/d07B/QdMb3529REftiU+RMMHL3Vlsw3hON7vWg==}
     hasBin: true
 
+  js-yaml@5.4.3:
+    resolution: {integrity: sha512-yzzNtgczwgoVHNigCyKTXcQJU4Y8t/ikU4UxXW0BvrLfHTGWZhsNcOT2s/a7vn81/4KqVnNmHjaUEPlvWnNwVw==}
+    hasBin: true
+
   jsesc@3.1.0:
     resolution: {integrity: sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==}
     engines: {node: '>=6'}
@@ -4695,8 +4699,8 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  shell-quote@1.11.0:
-    resolution: {integrity: sha512-JdxDPD0DBTyu08pq0kPC0xSNet/qsU07qT6IsX1AS8oO2ICNRY4ldNa8OAI6PuwAH8tG3lxEhbqmyp4Dw4036g==}
+  shell-quote@1.12.0:
+    resolution: {integrity: sha512-PcByqNyT/38F2kDNi006HAMRJaULuBzq/FOsw3qdZvX/GA9W/jamDaRskgHjubHiftXK5sIFxLNkvrXUwcof6Q==}
     engines: {node: '>= 0.4'}
 
   side-channel-list@1.0.1:
@@ -4741,8 +4745,8 @@ packages:
     resolution: {integrity: sha512-VZBmZP8WU3sMOZm1bdgTadsQbcscK0UM8oKxKVBs4XAhUo2Xxzm/OFMGBkPusxw9xL3Uy8LrzEqGqJhclsr0yA==}
     deprecated: Unsupported
 
-  smol-toml@1.9.0:
-    resolution: {integrity: sha512-hpd+HLON7HdZXqYchMM/+LaTTbdK0AU3NngIJ4KVyWbY9bfQqdL9cD+4yf6dUoU2Ap4VsU0JkQi6FxAI1B2mXQ==}
+  smol-toml@1.9.1:
+    resolution: {integrity: sha512-j7WyPdf0CJoutMzMoPLF/bVXHtKZIT9Rb4eGeEbWw8X2t5oirjPgpL+OpaENZrILYaXqYwnVH+qgUwVbl+pUJQ==}
     engines: {node: '>= 18'}
 
   sort-object-keys@2.1.0:
@@ -5692,7 +5696,7 @@ snapshots:
 
   '@actions/io@3.0.2': {}
 
-  '@anolilab/commitlint-config@10.1.3(@commitlint/cli@21.2.3(@types/node@25.9.8)(conventional-commits-parser@7.1.2)(typescript@7.0.2))(@types/node@25.9.8)(conventional-commits-parser@7.1.2)(typescript@7.0.2)':
+  '@anolilab/commitlint-config@10.1.5(@commitlint/cli@21.2.3(@types/node@25.9.8)(conventional-commits-parser@7.1.2)(typescript@7.0.2))(@types/node@25.9.8)(conventional-commits-parser@7.1.2)(typescript@7.0.2)':
     dependencies:
       '@commitlint/cli': 21.2.3(@types/node@25.9.8)(conventional-commits-parser@7.1.2)(typescript@7.0.2)
       '@commitlint/config-conventional': 21.2.2
@@ -5706,12 +5710,12 @@ snapshots:
       - conventional-commits-parser
       - typescript
 
-  '@anolilab/lint-staged-config@12.0.1(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.6.0)(prettier@3.9.9)(secretlint@13.0.7(supports-color@7.2.0))(smol-toml@1.9.0)(vitest@5.0.3(@types/node@25.9.8)(vite@8.3.2(@types/node@25.9.8)(jiti@2.7.0)(yaml@2.9.1)))(yaml@2.9.1)':
+  '@anolilab/lint-staged-config@12.0.3(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.6.0)(prettier@3.9.9)(secretlint@13.0.7(supports-color@7.2.0))(smol-toml@1.9.1)(vitest@5.0.3(@types/node@25.9.8)(vite@8.3.2(@types/node@25.9.8)(jiti@2.7.0)(yaml@2.9.1)))(yaml@2.9.1)':
     dependencies:
-      '@visulima/fs': 5.0.5(json5@2.2.3)(jsonc-parser@3.3.1)(smol-toml@1.9.0)(yaml@2.9.1)
-      '@visulima/package': 5.0.34(jsonc-parser@3.3.1)(smol-toml@1.9.0)
+      '@visulima/fs': 5.0.5(json5@2.2.3)(jsonc-parser@3.3.1)(smol-toml@1.9.1)(yaml@2.9.1)
+      '@visulima/package': 5.0.34(jsonc-parser@3.3.1)(smol-toml@1.9.1)
       husky: 9.1.7
-      shell-quote: 1.11.0
+      shell-quote: 1.12.0
       type-fest: 5.8.0
     optionalDependencies:
       lint-staged: 17.6.0
@@ -5726,10 +5730,10 @@ snapshots:
       - smol-toml
       - yaml
 
-  '@anolilab/multi-semantic-release@4.4.23(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@7.2.0)(typescript@7.0.2))(smol-toml@1.9.0)(supports-color@7.2.0)':
+  '@anolilab/multi-semantic-release@4.4.23(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@7.2.0)(typescript@7.0.2))(smol-toml@1.9.1)(supports-color@7.2.0)':
     dependencies:
       '@semrel-extra/topo': 1.14.1
-      '@visulima/fs': 5.1.0(json5@2.2.3)(jsonc-parser@3.3.1)(smol-toml@1.9.0)(yaml@2.9.1)
+      '@visulima/fs': 5.1.0(json5@2.2.3)(jsonc-parser@3.3.1)(smol-toml@1.9.1)(yaml@2.9.1)
       '@visulima/path': 3.1.0
       cosmiconfig: 10.0.1
       debug: 4.4.3(supports-color@7.2.0)
@@ -6475,7 +6479,7 @@ snapshots:
   '@semrel-extra/topo@1.14.1':
     dependencies:
       fast-glob: 3.3.3
-      js-yaml: 5.4.2
+      js-yaml: 5.4.3
       toposource: 1.2.0
 
   '@simple-libs/child-process-utils@2.0.0':
@@ -6710,7 +6714,7 @@ snapshots:
       '@textlint/resolver': 15.8.0
       '@textlint/types': 15.8.0
       debug: 4.4.3(supports-color@7.2.0)
-      js-yaml: 5.4.2
+      js-yaml: 5.4.3
       lodash: 4.18.1
       pluralize: 2.0.0
       string-width: 4.2.3
@@ -6963,36 +6967,36 @@ snapshots:
   '@typescript/typescript-win32-x64@7.0.2':
     optional: true
 
-  '@visulima/fs@5.0.5(json5@2.2.3)(jsonc-parser@3.3.1)(smol-toml@1.9.0)(yaml@2.9.1)':
+  '@visulima/fs@5.0.5(json5@2.2.3)(jsonc-parser@3.3.1)(smol-toml@1.9.1)(yaml@2.9.1)':
     dependencies:
       '@visulima/path': 3.0.0
     optionalDependencies:
       json5: 2.2.3
       jsonc-parser: 3.3.1
-      smol-toml: 1.9.0
+      smol-toml: 1.9.1
       yaml: 2.9.1
 
-  '@visulima/fs@5.1.0(json5@2.2.3)(jsonc-parser@3.3.1)(smol-toml@1.9.0)(yaml@2.9.1)':
+  '@visulima/fs@5.1.0(json5@2.2.3)(jsonc-parser@3.3.1)(smol-toml@1.9.1)(yaml@2.9.1)':
     dependencies:
       '@visulima/path': 3.1.0
     optionalDependencies:
       json5: 2.2.3
       jsonc-parser: 3.3.1
-      smol-toml: 1.9.0
+      smol-toml: 1.9.1
       yaml: 2.9.1
 
-  '@visulima/fs@6.0.21(json5@2.2.3)(jsonc-parser@3.3.1)(smol-toml@1.9.0)':
+  '@visulima/fs@6.0.21(json5@2.2.3)(jsonc-parser@3.3.1)(smol-toml@1.9.1)':
     dependencies:
       '@visulima/path': 4.0.0
     optionalDependencies:
       json5: 2.2.3
       jsonc-parser: 3.3.1
-      smol-toml: 1.9.0
+      smol-toml: 1.9.1
 
-  '@visulima/package@5.0.34(jsonc-parser@3.3.1)(smol-toml@1.9.0)':
+  '@visulima/package@5.0.34(jsonc-parser@3.3.1)(smol-toml@1.9.1)':
     dependencies:
       '@antfu/install-pkg': 2.1.0
-      '@visulima/fs': 6.0.21(json5@2.2.3)(jsonc-parser@3.3.1)(smol-toml@1.9.0)
+      '@visulima/fs': 6.0.21(json5@2.2.3)(jsonc-parser@3.3.1)(smol-toml@1.9.1)
       '@visulima/path': 4.0.0
       json5: 2.2.3
       normalize-package-data: 9.0.0
@@ -7548,7 +7552,7 @@ snapshots:
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
-      js-yaml: 5.4.2
+      js-yaml: 5.4.3
       parse-json: 5.2.0
     optionalDependencies:
       typescript: 7.0.2
@@ -8898,6 +8902,10 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
+  js-yaml@5.4.3:
+    dependencies:
+      argparse: 2.0.1
+
   jsesc@3.1.0: {}
 
   json-buffer@3.0.1: {}
@@ -10040,7 +10048,7 @@ snapshots:
       semver: 7.8.4
       signal-exit: 3.0.7
       sisteransi: 1.0.5
-      smol-toml: 1.9.0
+      smol-toml: 1.9.1
       string-width: 4.2.3
       string_decoder: 1.3.0
       strip-ansi: 6.0.1
@@ -10458,7 +10466,7 @@ snapshots:
   rc-config-loader@4.1.4(supports-color@7.2.0):
     dependencies:
       debug: 4.4.3(supports-color@7.2.0)
-      js-yaml: 5.4.2
+      js-yaml: 5.4.3
       json5: 2.2.3
       require-from-string: 2.0.2
     transitivePeerDependencies:
@@ -10936,7 +10944,7 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  shell-quote@1.11.0: {}
+  shell-quote@1.12.0: {}
 
   side-channel-list@1.0.1:
     dependencies:
@@ -10990,7 +10998,7 @@ snapshots:
 
   sliced@1.0.1: {}
 
-  smol-toml@1.9.0: {}
+  smol-toml@1.9.1: {}
 
   sort-object-keys@2.1.0: {}
 
