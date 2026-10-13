@@ -96,7 +96,7 @@ jobs:
 
             - name: "Setup resources and environment"
               id: "setup"
-              uses: "anolilab/workflows/step/setup@b338ef3e3435901b0368f00f8d7d414b0c59a51b" # v24.0.10
+              uses: "anolilab/workflows/step/setup@b5d611c5dda8645e93f2407e3d3fee250a9f5376" # v24.1.0
               with:
                   node-version: "${{ matrix.node_version }}"
 
@@ -132,7 +132,7 @@ jobs:
 
             - name: "Upload code coverage to codecov"
               if: "matrix.os == 'ubuntu-latest' && matrix.node_version == 24"
-              uses: "anolilab/workflows/step/codecov@b338ef3e3435901b0368f00f8d7d414b0c59a51b" # v24.0.10
+              uses: "anolilab/workflows/step/codecov@b5d611c5dda8645e93f2407e3d3fee250a9f5376" # v24.1.0
               with:
                   run-lint: "needs.files-changed.outputs.codecov == 'true'"
                   codecov-token: "${{ secrets.CODECOV_TOKEN }}"
