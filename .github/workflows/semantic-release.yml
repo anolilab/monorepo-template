@@ -54,7 +54,7 @@ jobs:
 
             - name: "Setup resources and environment"
               id: "setup"
-              uses: "anolilab/workflows/step/setup@b5d611c5dda8645e93f2407e3d3fee250a9f5376" # v24.1.0
+              uses: "anolilab/workflows/step/setup@fb7a881926480723026a1deaa587ceaaaee7bf12" # v24.2.0
               with:
                   node-version: "18.x"
                   cache-prefix: "semantic-release"
@@ -70,7 +70,7 @@ jobs:
               run: "if [ -d .nx/cache ]; then tar -cf - .nx/cache | lz4 > /tmp/nx_cache.tar.lz4; else echo 'No nx cache to package.'; fi" # compress nx cache
 
             - name: "Upload code coverage to codecov"
-              uses: "anolilab/workflows/step/codecov@b5d611c5dda8645e93f2407e3d3fee250a9f5376" # v24.1.0
+              uses: "anolilab/workflows/step/codecov@fb7a881926480723026a1deaa587ceaaaee7bf12" # v24.2.0
               with:
                   run-lint: "false"
                   codecov-token: "${{ secrets.CODECOV_TOKEN }}"
