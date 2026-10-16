@@ -8,6 +8,6 @@ on: # yamllint disable-line rule:truthy
 
 jobs:
     cleanup-branch-cache:
-        uses: "anolilab/workflows/.github/workflows/cleanup-branch-cache.yml@b5d611c5dda8645e93f2407e3d3fee250a9f5376" # v24.1.0
+        uses: "anolilab/workflows/.github/workflows/cleanup-branch-cache.yml@fb7a881926480723026a1deaa587ceaaaee7bf12" # v24.2.0
         with:
             target-repo: "{{ ORGANIZATIONS }}/{{ REPOSITORY_NAME }}"
