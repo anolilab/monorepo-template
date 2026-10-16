@@ -27,7 +27,7 @@ overrides:
   # 5.0.9 through 5.0.11 are still affected by GHSA-6j4f-fj2g-mc7p, GHSA-qhr7-859c-m2p7
   # and GHSA-q2hr-2g5m-vwhr.
   brace-expansion@<5.0.12: ^5.0.12
-  chrono-node@<2.2.4: ^2.10.2
+  chrono-node@<2.2.4: ^2.10.3
   http-cache-semantics@<=4.2.0: ^4.3.0
   form-data@>=4.0.0 <4.0.6: ">=4.0.6"
   axios@<1.20.0: ^1.20.0
@@ -48,7 +48,7 @@ overrides:
   js-yaml@>=4.0.0 <4.3.1: "^5.4.3"
   fast-uri@>=3.0.0 <3.1.5: ">=3.1.5 <5"
   postcss@<=8.5.22: ">=8.5.23 <9"
-  ip-address@<=10.3.0: ">=10.7.3"
+  ip-address@<=10.3.0: ">=10.7.4"
   nanoid@<3.3.17: ">=6.0.2"
   hono@>=4.0.0 <4.12.34: ">=4.12.34 <5"
   "@hono/node-server@<2.0.5": ">=2.1.4"
