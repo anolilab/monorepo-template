@@ -200,14 +200,14 @@ importers:
         specifier: ^10.1.5
         version: 10.1.5(@commitlint/cli@21.2.3(@types/node@25.9.9)(conventional-commits-parser@7.1.3)(typescript@7.0.2))(@types/node@25.9.9)(conventional-commits-parser@7.1.3)(typescript@7.0.2)
       '@anolilab/lint-staged-config':
-        specifier: ^13.0.0
+        specifier: ^13.0.1
         version: 13.0.1(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.6.0)(prettier@3.9.10)(secretlint@13.0.7(supports-color@10.2.2))(vitest@5.0.5(@types/node@25.9.9)(vite@8.3.4(@types/node@25.9.9)(jiti@2.7.0)(yaml@2.9.1)))(yaml@2.9.1)
       '@anolilab/multi-semantic-release':
-        specifier: ^4.4.24
-        version: 4.4.24(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@10.2.2)(typescript@7.0.2))(supports-color@10.2.2)
+        specifier: ^4.4.25
+        version: 4.6.0(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@10.2.2)(typescript@7.0.2))(supports-color@10.2.2)
       '@anolilab/prettier-config':
-        specifier: ^10.0.3
-        version: 10.0.3(prettier@3.9.10)
+        specifier: ^10.0.4
+        version: 10.0.4(prettier@3.9.10)
       '@anolilab/textlint-config':
         specifier: ^13.0.6
         version: 13.0.6(supports-color@10.2.2)(textlint@15.8.0(supports-color@10.2.2))
@@ -337,20 +337,20 @@ packages:
       vitest:
         optional: true
 
-  '@anolilab/multi-semantic-release@4.4.24':
-    resolution: {integrity: sha512-PQ3GKNtT3pP6hRZqp59t1bSdLo+HjcQjUlniqvVEMW2Im1t2/KpTASxBP0lA98DYGIA+U0/Sqh6zLS9sYbD3aw==}
+  '@anolilab/multi-semantic-release@4.6.0':
+    resolution: {integrity: sha512-v1b+2QQDhY3iZRITbFaFKoNJzMT99FcYqOkmqD/mtRGMOHhbl+vBCuG/SISoyjcQIxMdVlAoVWQcMmNHe1VaqQ==}
     engines: {node: ^22.14.0 || >=24.10.0}
     os: [darwin, linux, win32]
     hasBin: true
     peerDependencies:
       semantic-release: '>=24.2.9'
 
-  '@anolilab/prettier-config@10.0.3':
-    resolution: {integrity: sha512-zb+gDmmdW8M4yn4ZbzMkzj1xmnEhMA74vws8FWBew7wEcbhtpTSrvfMx0WJe4hnvLw5Ko5BCC6kFrvBjIcZybQ==}
+  '@anolilab/prettier-config@10.0.4':
+    resolution: {integrity: sha512-N4NI74CNxoJcl+9TyPMuOFF27JO88vgKqF0AiBdQP3wJKmLNVbgAwv+GE6aWzAR2zPNqDbUQ9mVCBaCfKC1AWw==}
     engines: {node: '>=22.12.0 <=25.*'}
     hasBin: true
     peerDependencies:
-      prettier: 3.9.6
+      prettier: 3.9.10
 
   '@anolilab/textlint-config@13.0.6':
     resolution: {integrity: sha512-kXYFvfgQp3o8yPOP0qQaYM2xDq7CKxvSGT6vcoPVdeB6Wn96sbWmM2Rmfg9t8jhYXPTFMU09I3ag5rM5/oXBfA==}
@@ -2270,8 +2270,8 @@ packages:
   eventemitter3@5.0.4:
     resolution: {integrity: sha512-mlsTRyGaPBjPedk6Bvw+aqbsXDtoAyAzm5MO7JgU+yVRyMQ5O8bD4Kcci7BS85f93veegeCPkL8R4GLClnjLFw==}
 
-  execa@10.1.0:
-    resolution: {integrity: sha512-5HT/600HqXEtmkb9mK/PkTWw+bQSCzPnWiZ4/87wD3Hi0wFzCapOuNT9p4M08PDd+KLHdHvFhKjOWmNx/npRNQ==}
+  execa@10.2.0:
+    resolution: {integrity: sha512-j1pFOVxaybMVCTNHSBuISL2KQcDS3KIE1wBmUp4n2X+1FgaQI2ZDJVy9TYxDyMCzYojRIMh9O8X/UoWZtxTJdw==}
     engines: {node: '>=22'}
 
   execa@8.0.1:
@@ -5662,7 +5662,7 @@ snapshots:
       - smol-toml
       - yaml
 
-  '@anolilab/multi-semantic-release@4.4.24(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@10.2.2)(typescript@7.0.2))(supports-color@10.2.2)':
+  '@anolilab/multi-semantic-release@4.6.0(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@10.2.2)(typescript@7.0.2))(supports-color@10.2.2)':
     dependencies:
       '@semrel-extra/topo': 1.14.1
       '@visulima/fs': 5.1.0(json5@2.2.3)(jsonc-parser@3.3.1)(yaml@2.9.1)
@@ -5670,7 +5670,7 @@ snapshots:
       cosmiconfig: 10.0.1
       debug: 4.4.3(supports-color@10.2.2)
       detect-indent: 7.0.2
-      execa: 10.1.0
+      execa: 10.2.0
       git-log-parser: 1.2.1
       lodash-es: 4.18.1
       resolve-from: 5.0.0
@@ -5687,7 +5687,7 @@ snapshots:
       - smol-toml
       - supports-color
 
-  '@anolilab/prettier-config@10.0.3(prettier@3.9.10)':
+  '@anolilab/prettier-config@10.0.4(prettier@3.9.10)':
     dependencies:
       prettier: 3.9.10
 
@@ -7834,7 +7834,7 @@ snapshots:
 
   eventemitter3@5.0.4: {}
 
-  execa@10.1.0:
+  execa@10.2.0:
     dependencies:
       '@sindresorhus/merge-streams': 4.0.0
       figures: 6.1.0
