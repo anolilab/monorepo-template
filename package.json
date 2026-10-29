@@ -49,7 +49,7 @@
         "extends browserslist-config-anolilab"
     ],
     "dependencies": {
-        "@anolilab/commitlint-config": "^10.1.5",
+        "@anolilab/commitlint-config": "^11.0.0",
         "@anolilab/lint-staged-config": "^13.0.1",
         "@anolilab/multi-semantic-release": "^4.6.0",
         "@anolilab/prettier-config": "^10.0.4",
