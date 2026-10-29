@@ -209,8 +209,8 @@ importers:
         specifier: ^10.0.4
         version: 10.0.4(prettier@3.9.10)
       '@anolilab/textlint-config':
-        specifier: ^13.0.6
-        version: 13.0.6(supports-color@10.2.2)(textlint@15.8.0(supports-color@10.2.2))
+        specifier: ^14.0.0
+        version: 14.0.0(supports-color@10.2.2)(textlint@15.8.0(supports-color@10.2.2))
       '@babel/core':
         specifier: ^8.0.7
         version: 8.0.7
@@ -352,8 +352,8 @@ packages:
     peerDependencies:
       prettier: 3.9.10
 
-  '@anolilab/textlint-config@13.0.6':
-    resolution: {integrity: sha512-kXYFvfgQp3o8yPOP0qQaYM2xDq7CKxvSGT6vcoPVdeB6Wn96sbWmM2Rmfg9t8jhYXPTFMU09I3ag5rM5/oXBfA==}
+  '@anolilab/textlint-config@14.0.0':
+    resolution: {integrity: sha512-v1hI8eXTmD9xh0L1/XajNrt9JLDhL8b3sFbGRWwmFQuy1b9zdMv4MVObkMj5biSVLd9Get6OY3Sun1NHQn5QjA==}
     engines: {node: '>=22.12.0 <=25.*'}
     hasBin: true
     peerDependencies:
@@ -5714,7 +5714,7 @@ snapshots:
     dependencies:
       prettier: 3.9.10
 
-  '@anolilab/textlint-config@13.0.6(supports-color@10.2.2)(textlint@15.8.0(supports-color@10.2.2))':
+  '@anolilab/textlint-config@14.0.0(supports-color@10.2.2)(textlint@15.8.0(supports-color@10.2.2))':
     dependencies:
       '@textlint-rule/textlint-rule-no-invalid-control-character': 3.0.0
       '@textlint-rule/textlint-rule-no-unmatched-pair': 2.0.4
