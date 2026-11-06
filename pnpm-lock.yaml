@@ -186,10 +186,10 @@ overrides:
   js-yaml@>=4.0.0 <4.3.1: ^5.5.0
   fast-uri@>=3.0.0 <3.1.5: '>=3.1.5 <5'
   postcss@<=8.5.22: '>=8.5.23 <9'
-  ip-address@<=10.3.0: '>=10.7.4'
+  ip-address@<=10.3.0: '>=10.7.5'
   nanoid@<3.3.17: '>=6.0.2'
   hono@>=4.0.0 <4.12.34: '>=4.12.34 <5'
-  '@hono/node-server@<2.0.5': '>=2.1.5'
+  '@hono/node-server@<2.0.5': '>=2.1.6'
   undici@>=7.0.0 <7.29.1: ^8.12.3
 
 importers:
@@ -203,8 +203,8 @@ importers:
         specifier: ^13.0.1
         version: 13.0.1(husky@9.1.7)(json5@2.2.3)(jsonc-parser@3.3.1)(lint-staged@17.6.0)(prettier@3.9.10)(secretlint@13.0.7(supports-color@10.2.2))(vitest@5.0.5(@types/node@25.9.9)(vite@8.3.4(@types/node@25.9.9)(jiti@2.7.0)(yaml@2.9.1)))(yaml@2.9.1)
       '@anolilab/multi-semantic-release':
-        specifier: ^4.6.0
-        version: 4.6.0(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@10.2.2)(typescript@7.0.2))(supports-color@10.2.2)
+        specifier: ^4.6.3
+        version: 4.6.3(@visulima/yaml@1.0.0)(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@10.2.2)(typescript@7.0.2))(supports-color@10.2.2)
       '@anolilab/prettier-config':
         specifier: ^10.0.4
         version: 10.0.4(prettier@3.9.10)
@@ -337,8 +337,8 @@ packages:
       vitest:
         optional: true
 
-  '@anolilab/multi-semantic-release@4.6.0':
-    resolution: {integrity: sha512-v1b+2QQDhY3iZRITbFaFKoNJzMT99FcYqOkmqD/mtRGMOHhbl+vBCuG/SISoyjcQIxMdVlAoVWQcMmNHe1VaqQ==}
+  '@anolilab/multi-semantic-release@4.6.3':
+    resolution: {integrity: sha512-otVpADSuC6S8BaBrQFNPi5lHbHyv/bdxYtvKHi2Z7FAzOuXFco+QMUcnmrbUEsyW4Dzx3kjRgoyyQZtllXTXXg==}
     engines: {node: ^22.14.0 || >=24.10.0}
     os: [darwin, linux, win32]
     hasBin: true
@@ -1382,17 +1382,19 @@ packages:
       yaml:
         optional: true
 
-  '@visulima/fs@5.1.0':
-    resolution: {integrity: sha512-KJmLA9iJAwx+GOhjLT1kcqBhY/s1uOU8eJrBz+TeyZX0h2p5USYKHlNd1p+VaB4/9ltl1MR4oRuXgY5jLP0vOA==}
+  '@visulima/fs@6.0.29':
+    resolution: {integrity: sha512-Jdez4KqUX2vkN8BPeKrMRuUW+nW13EtnODLA2CnZbBKg4mODIDVIMWQDK+2RSIRnhFYqoTQpbGgJyo1MdGGS2A==}
     engines: {node: ^22.14.0 || >=24.10.0}
     os: [darwin, linux, win32]
     peerDependencies:
+      '@visulima/yaml': 1.0.0
       ini: ^7.0.0
       json5: ^2.2.3
       jsonc-parser: ^3.3.1
-      smol-toml: ^1.9.1
-      yaml: '>=2.9.0'
+      smol-toml: ^1.8.1
     peerDependenciesMeta:
+      '@visulima/yaml':
+        optional: true
       ini:
         optional: true
       json5:
@@ -1401,15 +1403,13 @@ packages:
         optional: true
       smol-toml:
         optional: true
-      yaml:
-        optional: true
 
-  '@visulima/fs@6.0.29':
-    resolution: {integrity: sha512-Jdez4KqUX2vkN8BPeKrMRuUW+nW13EtnODLA2CnZbBKg4mODIDVIMWQDK+2RSIRnhFYqoTQpbGgJyo1MdGGS2A==}
+  '@visulima/fs@7.0.0':
+    resolution: {integrity: sha512-6XPkHW+d4t8jZjXl7a9r7DjvoMPjbzVbQVklmHQmvDYaSAYX5jEpBrAL4ZpuS9voSw2Mfzj8cccaZuGcMZYkyA==}
     engines: {node: ^22.14.0 || >=24.10.0}
     os: [darwin, linux, win32]
     peerDependencies:
-      '@visulima/yaml': 1.0.0
+      '@visulima/yaml': 2.0.0
       ini: ^7.0.0
       json5: ^2.2.3
       jsonc-parser: ^3.3.1
@@ -1443,6 +1443,11 @@ packages:
 
   '@visulima/path@4.0.0':
     resolution: {integrity: sha512-M9cTzZNtTbOl975YAgUzzzwg9xOMqqC2Y2Jy1uFDQufK0sBNgbFnvR0o14jIfNDxACXyhEN3DSuFa4W7U7Hf2g==}
+    engines: {node: ^22.14.0 || >=24.10.0}
+    os: [darwin, linux, win32]
+
+  '@visulima/path@5.0.0':
+    resolution: {integrity: sha512-4OBtMLJYmAWPHMxqpC2yijvdq1DLyX8aiG5H/qQLBHaeh7H2vCDGamXGA3hi9zvcA7NULAXpgLjQIHHgt5p1eQ==}
     engines: {node: ^22.14.0 || >=24.10.0}
     os: [darwin, linux, win32]
 
@@ -2289,8 +2294,8 @@ packages:
   eventemitter3@5.0.4:
     resolution: {integrity: sha512-mlsTRyGaPBjPedk6Bvw+aqbsXDtoAyAzm5MO7JgU+yVRyMQ5O8bD4Kcci7BS85f93veegeCPkL8R4GLClnjLFw==}
 
-  execa@10.2.0:
-    resolution: {integrity: sha512-j1pFOVxaybMVCTNHSBuISL2KQcDS3KIE1wBmUp4n2X+1FgaQI2ZDJVy9TYxDyMCzYojRIMh9O8X/UoWZtxTJdw==}
+  execa@10.2.1:
+    resolution: {integrity: sha512-/Bofl3ZBh2Q4/PG0W63qFzP5vDAypi8Zc90UWTBzaDNIYiX7apPOd0N6L8hG8CojUdq4V51adu8BObP+iVsSTw==}
     engines: {node: '>=22'}
 
   execa@8.0.1:
@@ -3165,10 +3170,6 @@ packages:
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
-
-  js-yaml@5.4.3:
-    resolution: {integrity: sha512-yzzNtgczwgoVHNigCyKTXcQJU4Y8t/ikU4UxXW0BvrLfHTGWZhsNcOT2s/a7vn81/4KqVnNmHjaUEPlvWnNwVw==}
-    hasBin: true
 
   js-yaml@5.5.0:
     resolution: {integrity: sha512-paNr4LFIFPjeeSmwNYdrb8FafLLG/Cr2Af3GjbsHJ5CxIjH4r0c2emlmRdAtpPAieP1gRVzk6buBbVP5gBMGAg==}
@@ -5685,15 +5686,15 @@ snapshots:
       - smol-toml
       - yaml
 
-  '@anolilab/multi-semantic-release@4.6.0(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@10.2.2)(typescript@7.0.2))(supports-color@10.2.2)':
+  '@anolilab/multi-semantic-release@4.6.3(@visulima/yaml@1.0.0)(json5@2.2.3)(jsonc-parser@3.3.1)(semantic-release@25.0.9(supports-color@10.2.2)(typescript@7.0.2))(supports-color@10.2.2)':
     dependencies:
       '@semrel-extra/topo': 1.14.1
-      '@visulima/fs': 5.1.0(json5@2.2.3)(jsonc-parser@3.3.1)(yaml@2.9.1)
+      '@visulima/fs': 7.0.0(@visulima/yaml@1.0.0)(json5@2.2.3)(jsonc-parser@3.3.1)
       '@visulima/path': 3.1.0
       cosmiconfig: 10.0.1
       debug: 4.4.3(supports-color@10.2.2)
       detect-indent: 7.0.2
-      execa: 10.2.0
+      execa: 10.2.1
       git-log-parser: 1.2.1
       lodash-es: 4.18.1
       resolve-from: 5.0.0
@@ -5704,6 +5705,7 @@ snapshots:
       yaml: 2.9.1
       yargs: 18.2.0
     transitivePeerDependencies:
+      - '@visulima/yaml'
       - ini
       - json5
       - jsonc-parser
@@ -6962,17 +6964,17 @@ snapshots:
       jsonc-parser: 3.3.1
       yaml: 2.9.1
 
-  '@visulima/fs@5.1.0(json5@2.2.3)(jsonc-parser@3.3.1)(yaml@2.9.1)':
-    dependencies:
-      '@visulima/path': 3.1.0
-    optionalDependencies:
-      json5: 2.2.3
-      jsonc-parser: 3.3.1
-      yaml: 2.9.1
-
   '@visulima/fs@6.0.29(@visulima/yaml@1.0.0)(json5@2.2.3)(jsonc-parser@3.3.1)':
     dependencies:
       '@visulima/path': 4.0.0
+    optionalDependencies:
+      '@visulima/yaml': 1.0.0
+      json5: 2.2.3
+      jsonc-parser: 3.3.1
+
+  '@visulima/fs@7.0.0(@visulima/yaml@1.0.0)(json5@2.2.3)(jsonc-parser@3.3.1)':
+    dependencies:
+      '@visulima/path': 5.0.0
     optionalDependencies:
       '@visulima/yaml': 1.0.0
       json5: 2.2.3
@@ -6996,6 +6998,8 @@ snapshots:
   '@visulima/path@3.1.0': {}
 
   '@visulima/path@4.0.0': {}
+
+  '@visulima/path@5.0.0': {}
 
   '@visulima/yaml@1.0.0': {}
 
@@ -7512,7 +7516,7 @@ snapshots:
   cosmiconfig@10.0.1:
     dependencies:
       env-paths: 2.2.1
-      js-yaml: 5.4.3
+      js-yaml: 5.5.0
 
   cosmiconfig@9.0.2(typescript@7.0.2):
     dependencies:
@@ -7891,7 +7895,7 @@ snapshots:
 
   eventemitter3@5.0.4: {}
 
-  execa@10.2.0:
+  execa@10.2.1:
     dependencies:
       '@sindresorhus/merge-streams': 4.0.0
       figures: 6.1.0
@@ -8836,10 +8840,6 @@ snapshots:
   js-tokens@10.0.0: {}
 
   js-tokens@4.0.0: {}
-
-  js-yaml@5.4.3:
-    dependencies:
-      argparse: 2.0.1
 
   js-yaml@5.5.0:
     dependencies:
