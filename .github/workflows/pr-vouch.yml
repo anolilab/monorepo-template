@@ -24,6 +24,6 @@ jobs:
             contents: "read"
             issues: "write" # to create the labels
             pull-requests: "write" # to apply them
-        uses: "anolilab/workflows/.github/workflows/vouch.yml@e484b4e5e086f12f0f4c02ba62988aed49f69a6d" # v25.0.6
+        uses: "anolilab/workflows/.github/workflows/vouch.yml@c591192cfee03092dfd5e3e2857f1a83b129464b" # v26.0.9
         with:
             target-repo: "anolilab/monorepo-template"
