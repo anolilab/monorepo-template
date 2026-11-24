@@ -24,6 +24,6 @@ jobs:
             contents: "read"
             issues: "write" # to create the labels
             pull-requests: "write" # to read the files and apply the label
-        uses: "anolilab/workflows/.github/workflows/pr-size.yml@e484b4e5e086f12f0f4c02ba62988aed49f69a6d" # v25.0.6
+        uses: "anolilab/workflows/.github/workflows/pr-size.yml@ad133c06463ecade56b67dd20a793ed89cb1ae33" # v26.0.10
         with:
             target-repo: "anolilab/monorepo-template"
